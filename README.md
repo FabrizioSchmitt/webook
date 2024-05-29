@@ -3,5 +3,6 @@
 
  ## Padrões de nomeclatura para branchs.
 
- A = main
+ A = main  
+ 
  B-nome = branch com modificações x

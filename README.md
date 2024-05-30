@@ -3,6 +3,12 @@
 
  ## Padrões de nomeclatura para branchs.
 
- A = main  
+ Main = ver+A+## (valor ordenado numérico do versionamento)  
+ Exemplo:  
  
- B-nome = branch com modificações x
+ **ver-A-01**  
+ 
+ Branch =branch + nome + versão = ver+b+nomeBranch+##.  
+ Exemplo:  
+ 
+ **ver-b-NomeDobranch-x-02**

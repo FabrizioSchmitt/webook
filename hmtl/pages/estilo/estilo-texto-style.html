@@ -8,19 +8,133 @@
     <title>Estilos para texto</title>
 </head>
 <body>
-    <button><strong><a href="../../index.html"></a></strong></button>
+    <button><strong><a href="../../index.html">Index</a></strong></button>
     <h1>Estilos para texto</h1>
     <hr>
     <p>A estilização para texto serve tanto para modificar a aparecência quanto para criar semântia onde houver marcações.<br>São representadas (na relação linha) por tags completas (início e fechamento)</p>
     <h2>Lista de estilizações:</h2>
-    <ul>
-        <li>&lt;small&gt;</li> =<small>pequeno</small>
-        <li>&lt;mm&gt;</li> = <em>itálico</em>
-        <li>&lt;b&gt;</li> = <b>negrito simples</b>
-        <li>&lt;strong&gt;</li> = <strong>negrito com semântia</strong>
-        <li>&lt;sup&gt;</li> = <sup>sobrescrito</sup>
-        <li>&lt;big&gt;</li> = <big>texto grande (obsoleto)</big>
-        
-    </ul>
+
+    <table>
+        <tr>
+            <th>Especificação de estilo.</th>
+            <th>Representação sintática.</th>
+            <th>Efeito</th>
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td>Tag small</td>
+            <!-- Representação sintática-->
+            <td>&lt;small&gt;</td>
+            <!-- Efeito aplicado-->
+            <td><small>Torna o texto pequeno</small></td>  
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td>Tag EM</td>
+            <!-- Representação sintática-->
+            <td>&lt;em&gt;&lt;/em&gt;</td>
+            <!-- Efeito aplicado-->
+            <td><em>Texto semântico em itálico</em></td>  
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td>Tag I</td>
+            <!-- Representação sintática-->
+            <td>&lt;i&gt;&lt;/i&gt;</td>
+            <!-- Efeito aplicado-->
+            <td><i>texto em itálico sem semântica</i></td>  
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td>Tag B</td>
+            <!-- Representação sintática-->
+            <td>&lt;b&gt;&lt;/b&gt;</td>
+            <!-- Efeito aplicado-->
+            <td>Texto em negrito sem semântica</td>  
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td>Tag STRONG</td>
+            <!-- Representação sintática-->
+            <td>&lt;strong&gt;&lt;/Strong&gt;</td>
+            <!-- Efeito aplicado-->
+            <td><strong>Texto em negrito com semântica</strong></td>  
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td>Tag SUP</td>
+            <!-- Representação sintática-->
+            <td>&lt;sup&gt;&lt;/sup&gt;</td>
+            <!-- Efeito aplicado-->
+            <td>texto sobrescrito<sup> h20</sup> 2<sup>2</sup></td>  
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td>Tag DEL</td>
+            <!-- Representação sintática-->
+            <td>&lt;del&gt;&lt;/del&gt;</td>
+            <!-- Efeito aplicado-->
+            <td><del>Sobre deletado</del></td>  
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td>Tag MARK</td>
+            <!-- Representação sintática-->
+            <td>&lt;mark&gt;&lt;/mark&gt;</td>
+            <!-- Efeito aplicado-->
+            <td><mark>Texto fica com marcador visual.</mark>
+            </td>  
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td>Tag INS</td>
+            <!-- Representação sintática-->
+            <td>&lt;ins&gt;&lt;/ins&gt;</td>
+            <!-- Efeito aplicado-->
+            <td><ins>Texto sublinhado com semântica</ins></td>  
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td>Tag U</td>
+            <!-- Representação sintática-->
+            <td>&lt;u&gt;&lt;/u&gt;</td>
+            <!-- Efeito aplicado-->
+            <td>Tag sublinhada sem semântica</td>  
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td>Tag CODE (mono-espaçado)</td>
+            <!-- Representação sintática-->
+            <td>&lt;code&gt;&lt;/code&gt;</td>
+            <!-- Efeito aplicado-->
+            <td><code>var=1.getNumber(23)</code></td>  
+        </tr>
+        <tr>
+            <!-- especificação de estilo-->
+            <td></td>
+            <!-- Representação sintática-->
+            <td>&lt;&gt;&lt;/&gt;</td>
+            <!-- Efeito aplicado-->
+            <td></td>  
+        </tr>
+    </table>
+    <h2>Formatação de texto</h2>
+    <p>
+        Qualquer texto pode ser mantido na formatação orignal a qual foi escrito usando a tag: &lt;pre&gt;&lt;/pre&gt;<br>
+<hr>
+        <pre><code>
+    public static void main(java.lang.String[] args) 
+throws Exception
+{
+AccessPropertyTest test = new AccessPropertyTest();
+
+test.setup();
+
+test.run();
+test.cleanup();
+}
+        </code></pre>
+    </p>
+<hr>
 </body>
 </html>

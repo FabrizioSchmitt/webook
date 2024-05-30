@@ -10,16 +10,113 @@
 <body>
     <button><strong><a href="../../index.html">Index</a></strong></button>
     <h1>Listas</h1>
+    <hr>
     <h2>Como as listas funcionam</h2>
     <p>As listas no <b>html</b> surgem em aspectos semânticos e visuais em uma única sintaxe.Define-se o tipo de lista, e dentro dessa lista são inseridos itens. Cada item dessa lista representa uma marcação seja do tipo definido pelo tipo da lista a ser usado.
     </p>
-    <p>
-        
+    <p><b>OBS</b><br>A partir do <b>html 5</b> a tag &lt;li&gt; passou a ser uma tag vazia. Ou seja, não existe mais a necessidade de utilizar uma tag de fechamento <b>&lt;/li&gt;</b>.
     </p>
     <hr>
-    <h2>Lista ordenada</h2>
+    <h2>Lista ordenada &lt;ol&gt;</h2>
+    <p>Listas ordenadas inserem enumeradores com base no valor do item anterior, adicionando a lista (no fim) valores incrementais. <br>Exemplo:
+        <ol>
+            <li>Melância
+            <li>Melância
+            <li>Melância
+        </ol>
+        <pre><textarea name="ta_1" rows="6" cols="30">
+<ol>
+    <li> Melância
+    <li> Melância
+    <li> Melância
+</ol>
+    </textarea></pre>
+        
+    Observe o valor [1.,2.,3] no inicio de cada item da lista. 
     <h2>Lista não ordenada</h2>
+    <p>Funciona exatamente da mesma forma que uma lista ordenada, exceto que cada item inserido na lista possui um marcador gráfico que não é enumerado, e não dispõe de semântica ordenativa. <br>Exemplo:</p>
+    <ul>
+        <li> Melância
+        <li> Melância
+        <li> Melância
+    </ul>
+    <pre><textarea name="ta_2" rows="6" cols="30">
+<ul>
+    <li> Melância
+    <li> Melância
+    <li> Melância
+</ul>
+    </textarea></pre> 
     <h2>Lista de descrições</h2>
+    <h2>Trabalhando com o atributo <em>TYPE</em> em listas</h2>
+    <p>Além dos atributos normais que cada uma das listas podem ter, uma vez que essas tags heram atributos da tag html, e outros atributos as quais possam eventualmente herdar características, existem alguns atribos próprios para trabalhar listas.</p>
+    Idependente de qual a lista que estejamos trabalhando, o atributo <b>type</b> é o operador das moficações utilizadas em listas.
+
+    <h3>Atributos da listas ordenadas</h3>
+    <p>Listas ordenadas possuem 5 valores para o atributo type, o numérico (como ja visto anteriormente) e outros 4, são eles:</p>
+    <p>Do tipo alfebético minúsculo;</p>
+    <ol>
+        <li type="a">item 1</li>
+        <li type="a">item 2</li>
+        <li type="a">item 3</li>
+        <li type="a">item 4</li>
+    </ol>
+<pre><textarea name="ta_3" rows="6" cols="30">
+<ol>
+    <li type="a">item 1</li>
+    <li type="a">item 2</li>
+    <li type="a">item 3</li>
+    <li type="a">item 4</li>
+</ol>
+</textarea></pre>
+    <p>Do tipo alfabético maiúsculo:</p>
+    <ol>
+        <li type="A">item 1</li>
+        <li type="A">item 2</li>
+        <li type="A">item 3</li>
+        <li type="A">item 4</li>
+    </ol>
+<pre><textarea name="ta_3" rows="7" cols="30">
+<ol>
+    <li type="A">item 1</li>
+    <li type="A">item 2</li>
+    <li type="A">item 3</li>
+    <li type="A">item 4</li>
+</ol>
+</textarea></pre>
+    <p>Do tipo algarismo romano menor</p>
+    <ol>
+        <li type="i">item 1</li>
+        <li type="i">item 2</li>
+        <li type="i">item 3</li>
+        <li type="i">item 4</li>
+    </ol>
+<pre><textarea name="ta_3" rows="6" cols="30">
+<ol>
+    <li type="i">item 1</li>
+    <li type="i">item 2</li>
+    <li type="i">item 3</li>
+    <li type="i">item 4</li>
+</ol>
+</textarea></pre>
+    <p>Do tipo algarismo romano maiúsculo</p>
+    <ol>
+        <li type="I">Item 1</li>
+        <li type="I">Item 2</li>
+        <li type="I">Item 3</li>
+        <li type="I">Item 4</li>
+    </ol>
+    <pre><textarea name="ta_3" rows="6" cols="30">
+<ol>
+    <li type="I">Item 1</li>
+    <li type="I">Item 2</li>
+    <li type="I">Item 3</li>
+    <li type="I">Item 4</li>
+</ol>
+</textarea></pre>
+
+    <h3>Atributos de listas não ordenadas</h3>
+    <h3>Atributos de listas descritivas</h3>
     
 </body>
 </html>

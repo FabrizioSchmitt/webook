@@ -49,8 +49,78 @@
     </textarea></pre> 
     <h2>Lista de descrições</h2>
 
+    <p>As listas descritivas oferecem uma maneira de criar descrições pré-formatadas para determinados assuntos.</p>
+    <p>A estruta de uma lista de descrições é muito semelhante a estrutura criada para uma tabela em HTML</p>
+
+    <dl> Início da descrição do assunto
+        <dt> Título ou subtítulo do assunto.
+            <dd>Dados sobre assunto.</dd>
+        </dt>
+    </dl>
+
+    <pre><code><textarea name="ta_3" rows="4" cols="50"><dl> Início da descrição do assunto
+        <dt> Título ou subtítulo do assunto.
+            <dd>Dados sobre assunto.</dd>
+        </dt>
+    </dl></textarea></code></pre>
+
+    <h2>Listas aninhas</h2>
+    <p>É possível aninhar listas do mesmo tipo, ou de tipos diferentes. Esse, é um dos  principais princípios no design e implementação de padrões de menus em HTML.</p>
+
+    <ul>
+        <li> Pessoa
+            <ol>
+                <li>Herança-1</li>
+                <li> Herança-2
+                    <ul>
+                        <li>Pente</li>
+                        <li>Dinheiro
+                            <ol>
+                                <li>15 Moedas</li>
+                                <li>10 cédulas</li>
+                            </ol>
+                        </li>
+                        <li>Rebimbóca</li>
+                        <li>Corrente</li>
+                    </ul>
+                </li>
+                <li>Herança-3</li>
+                <li>Herança-4</li>
+            </ol>
+        </li>
+        <li>Pessoa-2</li>
+        <li>Pessoa-3</li>
+    </ul>
+
+    <pre><code><textarea name="ta_4" rows="25" cols="60">
+        <ul>
+            <li> Pessoa
+                <ol>
+                    <li>Herança-1</li>
+                    <li> Herança-2
+                        <ul>
+                            <li>Pente</li>
+                            <li>Dinheiro
+                                <ol>
+                                    <li>15 Moedas</li>
+                                    <li>10 cédulas</li>
+                                </ol>
+                            </li>
+                            <li>Rebimbóca</li>
+                            <li>Corrente</li>
+                        </ul>
+                    </li>
+                    <li>Herança-3</li>
+                    <li>Herança-4</li>
+                </ol>
+            </li>
+            <li>Pessoa-2</li>
+            <li>Pessoa-3</li>
+        </ul>
+    </textarea></code></pre>
+
     <h2>Trabalhando com o atributo <em>TYPE</em> em listas</h2>
-    <p>Além dos atributos normais que cada uma das listas podem ter, uma vez que essas tags heram atributos da tag html, e outros atributos as quais possam eventualmente herdar características, existem alguns atribos próprios para trabalhar listas.</p>
+    <p>Além dos atributos normais que cada uma das listas podem ter, uma vez que essas tags herdam atributos da tag html, e outros atributos as quais possam eventualmente herdar características, existem alguns atribos próprios para trabalhar listas.</p>
     Idependente de qual a lista que estejamos trabalhando, o atributo <b>type</b> é o operador das moficações utilizadas em listas.
 
     <h3>Atributos da listas ordenadas</h3>
@@ -62,7 +132,7 @@
         <li>item 3</li>
         <li>item 4</li>
     </ol>
-<pre><textarea name="ta_3" rows="6" cols="30">
+<pre><textarea name="ta_5" rows="6" cols="30">
 <ol type="a">
     <li>item 1</li>
     <li>item 2</li>
@@ -77,7 +147,7 @@
         <li>item 3</li>
         <li>item 4</li>
     </ol>
-<pre><textarea name="ta_4" rows="7" cols="30">
+<pre><textarea name="ta_6" rows="7" cols="30">
 <ol type="A">
     <li>item 1</li>
     <li>item 2</li>
@@ -92,7 +162,7 @@
         <li>item 3</li>
         <li>item 4</li>
     </ol>
-<pre><textarea name="ta_5" rows="6" cols="30">
+<pre><textarea name="ta_7" rows="6" cols="30">
 <ol type="i">
     <li>item 1</li>
     <li>item 2</li>
@@ -107,7 +177,7 @@
         <li>Item 3</li>
         <li>Item 4</li>
     </ol>
-    <pre><textarea name="ta_6" rows="6" cols="30">
+    <pre><textarea name="ta_8" rows="6" cols="30">
     <ol type="I">
         <li>Item 1</li>
         <li>Item 2</li>
@@ -115,6 +185,7 @@
         <li>Item 4</li>
     </ol>
 </textarea></pre>
+    <h3>Atributo Start</h3>
     <p>As listas ordenadas oferecem ainda um outro tipo de atributo, o atributo: start. O atributo start determina (dentro de uma lista ordenada) qual o valor inicial da contagem enumerada da lista.</p>
 
     <ol start="3">
@@ -123,7 +194,7 @@
         <li>item 3</li>
     </ol>
 
-<pre><code><textarea name="ta_6" rows="5" cols="30">
+<pre><code><textarea name="ta_9" rows="5" cols="30">
 <ol start="3">
     <li>item 1</li>
     <li>item 2</li>
@@ -138,7 +209,7 @@
         <li type="disc">type="disc" Disc, o marcador padrão.</li>
         <li type="circle">type="circle" Marcador de circulo vazado</li>
     </ul>
-    <h3>Atributos de listas descritivas</h3>
+    
     
 </body>
 </html>

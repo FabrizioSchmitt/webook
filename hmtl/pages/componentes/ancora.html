@@ -22,37 +22,49 @@
     </textarea></code></pre>
 
     <h3>TARGET</h3>
-    <p>A propriedade target serve para definir onde o documento alvo será aberto.</p>
+    <p>A propriedade target serve para define como o navegador vai se comportar ao entrar em contato com determinado link.</p>
     
 
-    <pre><code><textarea name="t_a2" id="" rows="2" cols="40">
-        <a href="www.xxxxx.com" targt="_Blank"></a>
-    </textarea></code></pre>
 <!--Testes-->
     <h4>Teste com valores das propriedades <b>target</b></4>
     <h4>_self</h4>
-    <p>O valor _self serve que quando o link seja utilizado, ele abra na prípria página ao qual foi inserido.</p>
-    <p><strong>_self -</strong>Link/p>
+    <p>O valor _self faz com que determinado link abre na mesma aba, substituindo o conteúdo da aba atual.</p>
+    
     <a href="ancora.html"- target="_self">Link Teste</a><br>
     <h4>_blank</h4>
-    <P> O valor _blank serve para abrir o link em uma nova página.
-    <strong><a href="wwww.google.com" target="_blank">Link</a></strong>
+        <pre><code><textarea name="2" rows="3" cols="30">
+            <a href="ancora.html"- target="_self">Link Teste</a><br>
+        </textarea></code></pre>
+    <P> O valor _blank serve para abrir o link em uma nova aba.
+    <strong><a href="wwww.google.com" target="_blank" rel="external">Link</a></strong>
+
+    <pre><code><textarea name="t_a2" id="" rows="2" cols="40">
+        <a href="www.xxxxx.com" targt="_blank"></a>
+    </textarea></code></pre>
 
     <h3>REL</h3>
-        <p>O atributo rel define qual o tipo de relação que um documento (página) tem com outro. Dos possíveis valores presentes estão:</p>
-   
-    <ul>
-        <li>author</li>
-        <li>external</li>
-        <li>prev</li>
-    </ul>
+        <p>O atributo rel define qual o tipo de relação que um documento (página) tem com outro. Dessa forma, nosso documento informa aos navegadores dados importantes sobre a comunicação entre as páginas. Porém, essas informações não geram respostas visuais e sim semânticas.            
+        Dos possíveis valores presentes estão:<br>
+         Author,- external, self, prev, next, etc..etc</p>
+
+         <ul>
+            <li>next - indica que determinado link será o próximo na linha de execução.</li>
+            <li>prev -indica que determinado link tem sua relação como antecessor</li>
+            <li>notfollow - indica que determinado link não é recomendado pelo documento</li>
+            <li>author - indica que determinado link leva a informações sobre dado autor.</li>
+         </ul>
+    
+    
 
     <h3>Download</h3>
     <p>
-        O atributo download define qual valor/nome o arquivo alvo do link receberá como pre-definição ao efetuar a operação de download.
+        O atributo download define qual valor/nome o arquivo alvo do link receberá como pre-definição ao efetuar a operação de download. <br>
+        Nesse contexto, o atributo <b>type</b> pode ser utilizado para complementar a ordem de download. Por exemplo, ao especificar o tipo de arquivo como <em>type="application/pdf"</em> em se tratando de um PDF, fornece informações para que o navegador inicie diretamente o download. <br>
+        E
     </p>
 
     <a href="../../../img/ilustracoes/imagem_1.png" download="arquivo-imagem.png">Arquivo para download</a>
     
 </body>
 </html>
+

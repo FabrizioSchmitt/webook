@@ -8,4 +8,45 @@
 <body>
     
 </body>
+</html><!DOCTYPE html>
+<html lang="-pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/std-global-style-1.css">
+    <link rel="icon" href="../../../img/icones/icons8-online-32.png">
+    <title>Picture - Imagens Dinâmicas</title>
+</head>
+<body>
+    <button><strong><a href="../../index.html" rel="prev" target="_self">index</a></strong></button>
+    <h1>Imagem dinâmica com picture</h1>
+    <hr>
+    <h2>Picture</h2>
+    <p>A tag <em>picture</em> possibilita que o espaço reservado para um determinada imagem possa ser alimentado por diversas fontes diferentes de imagem, permitindo desta forma, fornecer, por exemplo, muitas versões da mesma imagem em tamanhos diferentes.</p>
+    <p>Esse conceito é aplicado principalmente sob o ascpeto da responsividade, quando uma tela de tamanho maior ou menor que o projetado originalmente tem contato com a seção da página que contém determinada imagem, possibilitando assim seu ajuste instatâneo para se adequar com necessidade de cada tamanho diferente de display.</p>
+
+    <h3>Source Media</h3>
+    <p>A tag picture envelopa outra tag, a tag: <b>source</b> essa por sua vez informa como o navegador deve se comportar a partir ponto de vista do tamanho do display, dinamizando a fonte de imagem com base na determinação de tamanho da mesma orientada pelo atributo media, que poderá receber como valor <b>min-width</b> passando em pixels o valor limite da imagem ao qual, após ser atingido procurará outra fonte de alimentação de imagem.  . A tag source</p>
+
+    <pre><code><textarea name="ta_10" rows="10" cols="60">
+    <picture>
+<source media="(min-width: 715px)" srcset="../../../img/ilustracoes/40k-original-700.jpg">
+<source media="(min-width: 615px)"srcset="../../../img/ilustracoes/40k-original.jpg" >
+<source media="(min-width: 315px)" srcset="../../../img/ilustracoes/40k-original-600.jpg">
+        <img src="../../../img/ilustracoes/40k-original-300.jpg" alt="warhammer 40k N">  
+    </picture>
+</textarea></code></pre>
+<p>Na medida que essa página for manipulada, a imagem irá se ajustar para o tamanho do navegar graças a tag picture. <br>
+Caso nenhuma alteração seja feita ao display, por padrão a src que picture irá buscar é aquela definida em: <b>img src</b>.
+    
+</p>
+
+<picture>
+    <source media="(min-width: 715px)" srcset="../../../img/ilustracoes/40k-original-700.jpg">
+    <source media="(min-width: 615px)"srcset="../../../img/ilustracoes/40k-original.jpg" >
+    <source media="(min-width: 315px)" srcset="../../../img/ilustracoes/40k-original-600.jpg">
+    <img src="../../../img/ilustracoes/40k-original-300.jpg" alt="warhammer 40k N">  
+</picture>
+
+</body>
 </html>

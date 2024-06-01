@@ -11,9 +11,73 @@
     <button><strong><a href="../../index.html" rel="prev" target="_self">Index</a></strong></button>
     <h1>Audio</h1>
     <hr>
-    <p>O elemento áudio pode</p>
+    <h2>Inserir elemento áudio</h2>
+    <p>O elemento áudio tem a capacidade de inserir midia de áudio para ser tocada dentro do próprio navegador. Porém, alguns navedores não irão mostrar o display dos controles de midia para audio automaticamente. É ai que entra o atributo <b><em>controls</em></b> o qual gera a interface de controle de audio para a página.</p>
+
 
     <audio src="../../../midia/som/Stellar Wind - Unicorn Heads.mp3" controls type="media">StellarWind.mp3</audio>
+
+    <pre><code><textarea name="t_a11" rows="3" cols="60"> <audio src="../../../midia/som/Stellar Wind - Unicorn Heads.mp3" controls type="media">StellarWind.mp3</audio></textarea></code></pre>
+
+    <h2>Multiplas fontes para 1 elemento</h2>
+    <p>Por questões de incompatibilidade de navegadores pode ser que alguns não executem determinado tipo de mídia. Nesse caso é possível fornecer fontes alternativas de midia(áudio) dentro da mesma tag, envelopando as fontes dentro da tag áudio.</p>
+
+<pre><code><textarea name="t_a12" rows="5" cols="60">
+<audio>
+    <source src="arquivo.mp3" type="audio/mpeg">
+    <source src="arquivo.ogg" type="audio/ogg">
+    <source src="arquivo.wav" type="audio/wav">
+</audio>
+    </textarea></code></pre>
+    <p>É importante salientar que, nessa categoria de fornecimento de mais de uma fonte de mídia, o html será executado pelo navegador na ordem em que é disposto no código fonte. Então, ele irá executar de "cima" para "baixo". <br>
+    É possível ainda listar nessa ordem de execuções outros elementos que não só midias de áudio, como por exemplo, um parágrafo explicando que determinada mídia não foi executada. Caso o navegador executa alguma dessas ordens sequênciais a execução para e as instruções subjacentes não serão executadas.</p>
+
+    <pre><code><textarea name="t_a13" rows="6" cols="60">
+<audio>
+    <source src="arquivo.mp3" type="audio/mpeg">
+    <source src="arquivo.ogg" type="audio/ogg">
+    <source src="arquivo.wav" type="audio/wav">
+    <p>Não é possível executar o arquivo</p>
+</audio>
+    </textarea></code></pre>
+    <h2>Funcionalidades extras</h2>
+    <p>Existem algumas funcionalidades adicionais no elemento áudio, que dizem respeito a suas funcionalidades predefinidades por exemplo.</p>
+    <p>O atributo <b>preload</b> define uma função de comportamento para o player de audio.</p>
+
+    <table >
+        <caption><b>Valores para preload</b></caption>
+        <tr>
+            <th>Valor</th>
+            <th>Funcionalidade</th>
+            <th>Sintaxe</th>
+        </tr>
+        <tr>
+            <!--valor-->
+            <td>auto</td>
+            <!--funcionalidade-->
+            <td>carrega automaticamente o arquivo de áudio e toca</td>
+            <!--sintaxe-->
+            <td>preload="auto"</td>
+        </tr>
+        <tr>
+            <!--valor-->
+            <td>metadata</td>
+            <!--funcionalidade-->
+            <td>carrega informações sobre o arquivo</td>
+            <!--sintaxe-->
+            <td>preload="metadata"</td>
+        </tr>
+        <tr>
+            <!--valor-->
+            <td>none</td>
+            <!--funcionalidade-->
+            <td>Não faz nada</td>
+            <!--sintaxe-->
+            <td>preload="none"</td>
+        </tr>
+    </table>
+        
+      
     
 </body>
 </html>

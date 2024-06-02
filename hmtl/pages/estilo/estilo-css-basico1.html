@@ -11,6 +11,66 @@
     <button><strong><a href="../../index.html">index</a></strong></button>
     <h1>Estilo CSS-1 O Básico</h1>
     <hr>
-    
+    <h2>Os tipos de aplicação CSS</h2>
+    As css(<b>as folhas de estilo</b>) podem ser aplicadas de formas diferentes. A seguir veremos as formas mais comuns:
+
+    <h3>CSS inline</h3>
+    <p>A aplicação inline (em linha) do CSS como o próprio nome já diz, é aplica linha por linha do documento, ou seja: para cada elemento presente que se queira mudar, a aplicação de estilo terá que ser feita manualmente com base no elemento <b>style</b>. <br>Exemplo: </p>
+<!--Textarea-->
+        <pre><code><textarea name="t_a16" rows="3" cols="80">
+        <p style="color:red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat, quos consequuntur quibusdam dolore dolorum molestias tenetur minima quisquam quis impedit obcaecati harum ullam totam voluptatum ducimus nam at mollitia.</p>
+</textarea></code></pre>
+<!--Fim textarea-->
+    <p>Essa é uma maneira pouco eficiente pois demanda muito trabalho desnecessário.</p>
+
+    <h3>CSS interno</h3>
+
+    <p>A segunda forma de uso do CSS é através da aplicação por documento. Essa forma de aplicação tem como prática o uso de uma tag <b>style</b> no cabeçalho que irá través de suas definições internas, aplicar as CSSs declaradas como padrão para todos os elementos encontrados no documento. <br>Exemplo:
+     </p>
+
+     <pre><code><textarea name="t_a17" rows="7" cols="30">
+        <head>
+            <style>
+                body{
+                    color:red;
+                }
+            </style>
+        </head>
+     </textarea></code></pre>
+     <p>A aplicação dessa técnica é melhor que a técnica inline, ela serve para bem para a aplicação individual de documentos quando necessário.</p>
+
+     <h3>Estilo externo</h3>
+     <p>A terceira forma de aplicação de estilos usando as CSSs é através de um documento .css dedicado a distribuir estilos globais ao "projeto". As definições desse documento -quando especificados- podem gear estilos em modo cascata.</p>
+
+     <p>DOcumento externo</p>
+
+     <em>style_doc.css</em>
+
+     <pre><code><textarea name="t_a18" rows="" cols="">
+
+        body{
+            font-align: justify;
+        }
+        h1{
+            color:red;
+        }
+     </textarea></code></pre>
+
+     <p>Aplicação no cabeçalho</p>
+     <pre><code><textarea name="t_a19" cols="60" rows="3">
+        <head>
+            <link rel="stylesheet" href="style_doc.css" type="text/css">
+        </head>
+     </textarea></code></pre>
+    <p>A propriedade Href indica para o documento html onde o estilo css deve ser buscado, enquanto a propriedade "rel" indica o tipo de relação com o documento.</p>
+
+    <h3>Hierarquia de métodos</h3>
+        <p>Quando ocorrer a existência de múltiplos estilos sobre um mesmo elemento, o que vai definir estilo a ser aplicado é sua ordem hierárquica no seguinte sentido:</p>
+
+        <ol >
+            <li>Em primeiro lugar: Estilo inline</li>
+            <li>Em segundo lugar: Estilo interno</li>
+            <li>Em terceiro lugar: Estilo externo</li>
+        </ol>
 </body>
 </html>

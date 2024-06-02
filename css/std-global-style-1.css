@@ -1,8 +1,11 @@
 body{
     background-color: antiquewhite;
+    font-size: 16;
+    font-family: sans-serif;
 }
 p{
     background-color:bisque;
+    text-align: justify;
 }
 table,th,tr,td{
     border:solid 1px;

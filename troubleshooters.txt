@@ -1,0 +1,1 @@
+Procurar solução para: multiRootWorkspaceName - razão: vscode não está identificando as pastas root na mesma workspace. Procurar configuração acertada. 

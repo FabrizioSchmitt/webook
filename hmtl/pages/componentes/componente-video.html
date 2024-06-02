@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/std-global-style-1.css">
+    <link rel="icon" href="../../../img/icones/icons8-online-32.png" type="x-icon">
+    <title>Rodar vídeos</title>
+</head>
+<body>
+    <button><strong><a href="../../index.html" rea="prev" target="_self">index</a></strong></button>
+    <h1>Rodando vídeos</h1>
+    <hr>
+    <h2>Vídeos internos</h2>
+    <p>A tag vídeo tem o funcionamento muito semelhante a tag <a href="../estilo/estilo-imagem-dinamica-picture.html" alt="tag picture" rel="next" target="_blank"><abbr title="tag picture">&lt;picture&gt;</abbr></a></p>. <p>Ela provém o documento <b>html</b> com a capacidade de imbutir vídeos para rodar e também pode fornecer uma interface de controle, bem como meta informações e também a possibilidade de adicionar mais de uma fonte de fornecimento para o mesmo vídeo.</p>
+
+    <h3>Fonte alimentada por 1 vídeo:</h3>
+
+    <video src="../../../midia/video/19177707-uhd_3840_2160_25fps.mp4" height="200px" width="200px" controls>Vídeo-1</video>
+
+<pre><code><textarea name="t_a14" rows="4" cols="50">
+    <video src="../../../midia/video/19177707-uhd_3840_2160_25fps.mp4" height="200px" width="200px" controls>Vídeo-1</video>
+</textarea></code></pre>
+<h3>Fonte alimentada por mais de 1 vídeo</h2>
+  <p> Da mesma forma que outras mídias , a source irá executar a primeira referência válida na página.</p>
+
+  <video height="300" width="300" controls >
+    <source src="../../../midia/video/20600550-uhd_3840_2160_30fps.webm" type="video/webm">
+    <source src="../../../midia/video/20600550-uhd_3840_2160_30fps.mp4" type="video/mp4">
+  </video>
+
+  <pre><code><textarea name="t_a15" rows="7" cols="50">
+<video height="300px" width="300px" controls >
+        <source src="../../../midia/video/20600550-uhd_3840_2160_30fps.webm" type="video/webm">
+        <source src="../../../midia/video/20600550-uhd_3840_2160_30fps.mp4" type="video/mp4">
+    </video>
+</textarea></code></pre>
+    
+
+<h3>Imagens do vídeo</h3>
+
+<p>É possível inserir uma turbnail usando a propriedade: <em><b>poster="imagens/NomeDoArquivo"</b></em></p>
+
+<video  controls height="200px" widht="200px" poster="../../../img/ilustracoes/imagem_1.png">
+    <source src="../../../midia/video/20600550-uhd_3840_2160_30fps.webm" type="video/webm" >
+    Seu navegador não suporta o vídeo
+</video>
+
+<pre><code><textarea name="t_a16" rows="6" cols="55"><video  controls height="200px" widht="200px" poster="../../../img/ilustracoes/imagem_1.png">
+    <source src="../../../midia/video/20600550-uhd_3840_2160_30fps.webm" type="video/webm" >
+    Seu navegador não suporta o vídeo
+</video>
+</textarea>
+</code></pre>
+<h2>Inserindo vídeos externos</h2>
+<p>É possível inserir vídeos externos simplismente usando as opções de incorporar disponíveis nos sites de repositórios de vídeo.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uuIIoiiBLEo?si=WSPbalOt1twDDTaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

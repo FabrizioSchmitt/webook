@@ -24,3 +24,9 @@ ol{
 ul{
     background-color: rgb(212, 196, 177);
 }
+textarea{
+    color:red;
+    font-weight: bolder;
+    
+    
+}

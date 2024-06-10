@@ -8,14 +8,47 @@
     <link rel="icon" href="../../../img/icones/icons8-online-32.png" type="image/x-icon">
 </head>
 <body>
-    <div style="width: 30%; height: 30%; background-color: brown;">
+    <div class="NavheaderBar_1">
         <nav>
-        
+            <div></div>
             <button><strong><a href="../../index.html" type="text/html" rel="prev" target="_self">Index</a></strong></button>
-            <button><strong><a href="../../pages/interatividade-javascript/interatividade-2-jc-variaveis.html" type="text/html" rel="prev" target="_blank"></a>Variáveis Javascript</strong></button>
+            <button><strong><a href="../../pages/interatividade-javascript/interatividade-2-jc-variaveis.html" type="text/html" rel="prev" target="_blank">Variáveis Javascript</a></strong></button>
+            </div>
         </nav>
     </div>
     <h1>Apêndice 1 - Escopos em Javascript</h1>
     <hr>
+    <h2>Escopos</h2>
+    <p>Escopos são delimitações, metas, objetivos etc. <br>
+    De modo geral, em programação escopos se referem a blocos de código, delimitados por grafismos. Em Html o escopo de uma tag começa com uma tag de abertura e uma tag de fechamento. Em linguagens de programação, esse escopo é geralmente delimitado (ou referido) como blocos e quase sempre o grafismo utilizado é <b>{ }</b> onde o <em>"escopo" refere-se a tudo que se encontra entre as chaves. </em></p>
+
+    exemplos: <br>
+
+    <pre><code><textarea name="t_a23" rows="6" cols="50" disabled>
+        var a=10;
+        functionSoma(a){   &lt;--//começo do escopo
+            let b+==a;  //corpo da função
+
+        }              &lt; //encerramento do escopo
+    </textarea></code></pre>
+    <p>No exemplo acima, vimos um escopo implementado dentro de uma função; É claro que essa não é a única forma de grafismo e tão pouco de implementação, vamos o próximo exemplo:</p>
+    <pre><code><textarea name="t_a24" id="" rows="9" cols="65" disabled>
+        <script> //Abertura do primeiro escopo
+
+            var n1=1;
+            var n2=1;
+            functionSoma(n1,n2);{//Abertura do segundo escopo
+                let n3=n1+n2;
+                console.log(n3);
+            }//Fechamento do segundo escopo
+        </script> //Fechamento do segundo escopo
+
+    </textarea></code></pre>
+
+    <p>No exemplo acima, Temos 2 escopos, 1 escopo macro que iniciar na instrução script; e um escopo interno que é iniciado dentro da <code>functionSoma</code>. <br>
+    Em suma, essa divisão refere-se a 1 bloco (function) dentro de outro bloco. Os escopos, para fins de definição delimitam espaços, barreiras, etc. (script)</p>
+    
+
+
 </body>
 </html>

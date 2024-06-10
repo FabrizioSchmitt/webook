@@ -1,3 +1,4 @@
+/* estilo de body*/
 body{
     background-color: antiquewhite;
     font-size: 16;
@@ -23,10 +24,20 @@ ol{
 }
 ul{
     background-color: rgb(212, 196, 177);
+    max-width: 50%;
 }
+/*estilo de componentes*/
 textarea{
-    color:red;
-    font-weight: bolder;
+    color:rgb(170, 68, 50);
+    font-weight: bolder;  
+}
+.NavheaderBar_1{
+    max-width: 95%;
+    background-color: rgb(225, 203, 34);
+    max-height: 10%;
+    margin: -6px auto; 
+}
+.NavComponentesCenter{
     
-    
+    display:flex
 }

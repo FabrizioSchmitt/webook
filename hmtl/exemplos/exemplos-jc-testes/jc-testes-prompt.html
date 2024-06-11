@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/std-global-style-1.css" type="text/css">
+    <link rel="icon" href="../../../img/icones/icons8-online-32.png" type="image/x-icon">
+    <title>Teste prompt Javascript</title>
+</head>
+<body>
+    <div class="NavheaderBar_1">
+        <nav>
+            <button><strong><a href="../../index.html" rel="prev" type="text/html" target="_blank">Index</a></strong></button>
+            <button><strong><a href="../../menus/menus-jc.html" rel="prev" type="text/html" target="_self">Menu Exemplos</a></strong></button>
+        </nav>
+    </div>
+    <h1>Testes com prompt</h1>
+    <hr>
+    <h2>Prompt</h2>
+    <br>
+    <h3>Exercício diga seu nome</h3>
+    
+    <script>
+        prompt("Diga seu nome");
+        window.alert("Agora aperte <strong>enter</strong>,e diga seu nome novamente.");
+        var nome= prompt("Diga seu nome que a máquina responde.");
+        document.write(`Olá,<strong>${nome}</strong>.Como você está?`);     
+    </script>
+
+    <caption>O código do script que acabou de ser executado:</caption>
+    <pre><code><textarea name="t_27" id="" cols="50" rows="10" disable>
+        <script>
+            prompt("Diga seu nome");
+            window.alert("Agora aperte  text.bold(enter) </strong>,e diga seu nome novamente.");
+            var nome= prompt("Diga seu nome que a máquina responde.");
+            document.write(`Olá,<strong>${nome}</strong>.Como você está?`);     
+        </script>
+    </textarea></code></pre>
+
+    <p>OBS: <em>Caso alguma tag de formatação for usada dentro das strings de javascript, <b>CUIDAR PARA ELAS FICAREM COLADAS NAS VARIÁVEIS!</b></em></p>
+
+    <p><b>Observe</b></p>
+    <pre><code><textarea name="t_a26" id="" disable rows="3" cols="50">
+        document.write(`Olá,<strong>${nome}</strong>.Como você está?`);     
+    </textarea></code></pre>
+
+
+    
+</body>
+</html>

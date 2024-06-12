@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/std-global-style-1.css" type="text/css">
+    <link rel="icon" href="../../../img/icones/icons8-online-32.png" type="image/x-icon">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <div class="NavheaderBar_1"><nav>
+        <button><strong><a href="../../index.html" type="text/html" rel="prev" target="_self">Index</a></strong></button>
+        <button><strong><a href="../../menus/menus-jc.html">Menu JavaScript</a></strong></button>
+    </nav></div>
+    <h1>Operadores Lógicos</h1>
+    <hr>
+    <h2>Notação</h2>
+        <table >
+            <caption class="captionTable">Operadores binários</caption>
+            <tr>
+                
+                <th>Sinal</th>
+                <th>Tipo de proposição</th>
+                <th>Condição 1</th>
+                <th>Condição 2</th>
+                <th>Comparação lógica</th>
+                <th>Ordem de precedência</th>
+                <th>Observação</th>
+
+            </tr>
+            <tr>
+                <!--Sinal-->
+                <td>!</td>
+                <!--Tipo de proposição-->
+                <td>Negação</td>
+                <!--condição 1-->
+                <td>True</td>
+                <!--condição 2-->
+                <td>---</td>
+                <!--Comparação lógica-->
+                <td>False</td>
+                 <!--Ordem de precedência-->
+                 <td>1</td>
+                 <!--Observação-->
+                 <td>Inverte o valor lógico</td>
+            </tr>
+            <tr>
+                <!--Sinal-->
+                <td>&&</td>
+                <!--Nomenclatura-->
+                <td>Conjunção</td>
+                <!--condição 1-->
+                <td>True</td>
+                <!--condição 2-->
+                <td>False</td>
+                <!--Comparação lógica-->
+                <td>True</td>
+                <!--Ordem de precedência-->
+                <td>2</td>
+                 <!--Observação-->
+                 <td>Precisa de ambos iguais para validar (esse e esse)</td>
+            </tr>
+            <tr>
+                <!--Sinal-->
+                <td>||</td>
+                <!--Nomenclatura-->
+                <td>Disjunção</td>
+                <!--condição 1-->
+                <td>True</td>
+                <!--condição 2-->
+                <td>False</td>
+                <!--Comparação lógica-->
+                <td>False</td>
+                <!--Ordem de precedência-->
+                <td>3</td>
+                <!--Observação-->
+                <td>Esse ou esse, precisa de um dos valores para validar</td>
+            </tr>
+           
+        </table>
+
+        <h3>Operador ternário</h3>
+        O operador ternário possui 3 cláusulas. A primeira clausulá é o valor a ser avaliado. A expressão é disposta no inicio da operação (variável A) e logo após é feita uma comparação lógica. Após essa operação lógica ser realizada, o resultante dessas terá dois caminhos, ou irá para a o resultado da expressão 1 ou 2, sendo true ou false respectivamente. Exemplo:
+
+        <pre><code><textarea name="t_a33" disabled  cols="60"  rows="4" id="">
+            var a=true;
+            a==true?//comparação lógica console.log("É")//resultado true:console.log("Não é") //resultado false.
+        </textarea></code></pre>
+    <p>
+
+    </p>
+    
+</body>
+</html>

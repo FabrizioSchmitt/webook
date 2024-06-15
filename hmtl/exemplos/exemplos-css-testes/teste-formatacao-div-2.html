@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação Div 2</title>
+    <style>
+        .divDisplayClasse{
+            display:flex;
+        }
+        .posicaoDiv1{
+            
+            position:absolute;
+            top: 50px;
+            bottom: 400px;
+            left: 5px;
+            right: 5px;
+            height: 100px;
+            width: 30%;
+            margin: 5px;
+        }
+        .posicaoDiv2{
+            position:absolute;
+            width: 30%;
+            top: 50px;
+            height: 100px;
+            left: 370px;
+            margin: 5px;
+            
+        }
+        .posicaoDiv3{
+            position:absolute;
+            bottom:400px;
+            width: 30%;
+            top: 55px;
+            height: 100px;
+            left: 750px;
+            right: 5px;
+        }
+        .divTop{
+            background-color: red;
+        }
+        .divMiddle{
+            background-color: gray;
+        }
+        .divFooter{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="divTop posicaoDiv1 divDisplayClasse" >TOP
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nostrum non aperiam dolor temporibus sit ipsum numquam tenetur debitis corporis dicta unde voluptatem reprehenderit ab, labore laudantium quas molestiae consequatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae at, atque veniam soluta, placeat ad laboriosam nesciunt commodi, temporibus accusamus. Deserunt quo quisquam dolor a, est facilis saepe asperiores!</p>
+        </div>
+    </div>
+    <div class="divMiddle divDisplayClasse posicaoDiv2">Middle
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem eveniet necessitatibus illum asperiores eum, natus laudantium tempore iure vel esse excepturi quam commodi officiis molestiae earum sint nihil neque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem corporis harum ullam consequuntur sequi. Vero voluptatem sequi vitae veniam, quam voluptatibus quas consequatur, libero perferendis dolorem fugiat, numquam nam officia.</p>
+        </div>
+    </div>
+    <div class="divFooter divDisplayClasse posicaoDiv3">Footer
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illum alias, vero iure aperiam sit ad magni odit asperiores corrupti aliquam mollitia aut accusantium, atque facere ducimus animi inventore quam!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt illum illo quo excepturi? Consectetur dolores eaque a ad, reiciendis accusantium sed sequi sit saepe reprehenderit nostrum vel quisquam, adipisci beatae.</p>
+        
+        </div>  
+    </div>
+    
+</body>
+</html>

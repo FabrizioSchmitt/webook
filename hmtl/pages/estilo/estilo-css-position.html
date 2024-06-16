@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/std-global-style-1.css">
+    <link rel="icon" href="../../../img/icones/icons8-online-32.png" type="Imagem/x-icon">
+    <style>
+        .divbase{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(190, 193, 196);
+            
+        }
+    </style>
+    <title>CSS- Position</titleP></title>
+</head>
+<body>
+    <div>
+        <nav>
+            <button><strong><a href="../../index.html">Index</a></strong></button>
+            <button><strong><a href="../../menus/menus-tags-estilo.html">Menu de Estilos</a></strong></button>
+        </nav>
+    </div>
+    <h1>CSS Positions</h1>
+    <hr>
+    <h2>Os presets de Position</h2>
+    <p>Existem 5 tipos de position que podemos usar para "setar" o estilo dos elementos são eles:</p>
+    <ul>
+        <li>Static -Posição de fluxo da página (padrão)</li>
+        <li>Absolute- Posição relativa ao pai desde que esse tenha posição definida.</li>
+        <li>Relative Relativo a posição dele mesmo (na qual ele aparece no fluxo natural dos elementos da página.).</li>
+        <li>Fixed</li>
+        <li>Stick</li>
+    </ul>
+    <h3>Static</h3>
+<!--RELATIVE-->
+    <h3>Relative</h3>
+    <p>O position relative é sempre relativo a ele mesmo ou seja, seu local natural no <a href="../../apendices/apendice-6-fluxo.html"><abbr title="Flow-fluxo html">fluxo</abbr></a> da página. Se ele for ajustado para algum ponto para além do seu original, ele vai pegar esse ponto de referência como base e se mover através dele caso sejam aplicadas modificações de localização através da página.</p>
+    <div class="divbase" style="position:absolute;left: 700px;"><div style="position:relative;transform:translateY(30px);">RELATIVE</div></div>
+<!--FIM RELATIVE-->
+
+<!--ABSOLUTE-->
+    <h3>ABSOLUTE</h3>
+    <p>Se posiciona em relação ao elemento pai, desde que o elemento pai tenha a position definida</p>
+    <div class="divbase" style="position:absolute;left: 400px;"><div style="position:absolute;top: 40%;">ABSOLUTE</div></div>
+
+    <h3>Fixed</h3>
+    <p>O elemento ajustado com sua propriedade <em>position</em> no valor fixed, irá ficar fixo em uma determinada posição da página, e mesmo que a mesma sofra rolagem o elemento vai ser manter no mesmo lugar, seguindo qualquer movimentação da página.</p>
+
+
+</body>
+</html>

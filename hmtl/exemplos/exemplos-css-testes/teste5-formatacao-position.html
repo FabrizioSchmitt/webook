@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divPai{
+            background-color: yellowgreen;
+            height: 400px;
+            width:400px;
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+            
+             
+        }
+        .divPai2{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            position: relative;
+            top: 0px;
+            margin:0 auto;
+            text-align: center;
+            
+
+        }
+        .divFilho2{
+
+            height: 50px;
+            width: 50px;
+            background-color: chartreuse;
+            text-align: center;
+            position: absolute;
+            /* método de centralização de divs */
+            right: 50%;
+            margin-right: -25px;
+            top:50%;
+            margin-top: -25px;
+
+          
+            
+        }
+        .divFilho{
+            background-color: red;
+            height:100px;
+            width:100px;
+            position: absolute;
+            left: 50%;   
+            margin-left: -50px;
+            top: 50%;
+            margin-top: -50px;
+            text-align: center;
+            
+            
+                      
+        }
+    </style>
+</head>
+<body>
+
+    <div class="divPai"><strong>Pai<div class="divFilho"><strong>Filho</strong></div> </strong></div>
+
+    <div class="divPai2">Pai 2<div class="divFilho2">Filho 2</div></div>
+    
+    
+</body>
+</html>

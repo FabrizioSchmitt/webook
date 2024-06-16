@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .divPai{
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+            
+            
+        }
+        .divFilho{
+            height: 50px;
+            width: 50px;
+            margin: 0 auto;
+            text-align: center;
+            position: absolute;
+        }
+        .divPai1{
+            background-color: red;
+        }
+        .divPai2{
+            background-color: green;
+        }
+        .divPai3{
+            background-color: blue;
+        }
+
+         
+        .divFilho1{
+            background-color: blueviolet;
+        }
+        .divFilho2{
+            background-color: chartreuse;
+        }
+        .divFilho3{
+            background-color: fuchsia;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="divPai1 divPai"><strong>Pai 1</strong>
+        <!--DIv filho 1-->
+        <div class="divFilho divFilho1">Filho 1</div>
+    </div>
+
+    <div class="divPai2 divPai"><strong>Pai 2</strong>
+        <!--Div filho 2-->
+        <div class="divFilho divFilho2">Filho 2</div>
+    
+    </div>
+
+    <div class="divPai3 divPai"><strong>Pai 3</strong>  
+        <!--Div filho 3-->
+        <div class="divFilho divFilho3">filho 3</div>
+    
+    </div>
+
+    <div style="position: fixed; height: 200px; width: 200px; background-color: black;">fixo</div>
+    
+    <div style="position: sticky; height: 200px; width: 200px; background-color: rgb(64, 255, 0);">sticky</div>
+    <div style="position: relative; height: 200px; width: 100px;background-color: bisque;border: 1px solid; top: 80px;"></div>
+    <div  style="height: 200px; width: 200px;background-color: goldenrod; top: 5000px; position: relative;">Footer</div>
+    
+</body>
+</html>

@@ -41,9 +41,9 @@
     <p>Existem 5 tipos de position que podemos usar para "setar" o estilo dos elementos são eles:</p>
     <ul>
         <li>Static -Posição de fluxo da página (padrão)</li>
-        <li>Absolute- Posição relativa ao pai desde que esse tenha posição definida.</li>
+        <li>Absolute- Valor que não recebe por default nenhuma posição,m as pode ter como posição orientadora um elemento parent.</li>
         <li>Relative Relativo a posição dele mesmo (na qual ele aparece no fluxo natural dos elementos da página.).</li>
-        <li>Fixed</li>
+        <li>Fixed - Fica fixo em uma determinada posição da página. </li>
         <li>Stick</li>
     </ul>
 <!--Static--->
@@ -58,12 +58,9 @@
 <!--ABSOLUTE-->
     <h3>ABSOLUTE</h3>
     <p>Se posiciona em relação ao elemento pai, desde que o elemento pai tenha a position definida diferente de static. Caso não existe um element parent(pai) próximo ele vai procurar outro e outro e caso não houve nenhum, ele vai seguir o fluxo natural da página. É importante frisar que quando um elemento tem como <em>position: absolute</em> sendo child (filho) de algum elemento que, possua position diferente de static o filho vai receber como referência a posição do pai, de maneira que, qualquer modificação em seu valor de localização passará a contar a partir da posição do elemento pai. </p>
-<!--Fixed-->
-    <h3>Fixed</h3>
-    <p>O elemento ajustado com sua propriedade <em>position</em> no valor fixed, irá ficar fixo em uma determinada posição da página, e mesmo que a mesma sofra rolagem o elemento vai ser manter no mesmo lugar, seguindo qualquer movimentação da página.</p>
 
 
-    <h2>Como Centralizar um elemento dentro de outro elemento?</h2>
+    <h4>Como Centralizar um elemento dentro de outro elemento?</h4>
 
     <p>Existem algumas formas de fazer isso. Tomando div como elemento escolhido para essa demonstração, o código é:</p> 
 
@@ -83,10 +80,22 @@
         top:50%;
         margin-top: -25px;
     </textarea></code></pre>
-    <p style="text-align: center;"><B>Veja o exemplo</B></p>
+    <p style="text-align: center;"><B>Veja o exemplo de centralização interna de elementos (divs).</B></p>
     
     <div class="divPai"><strong>Pai</strong><div class="divFilho"><strong>Filho</strong></div></div>
+    
+    <!--Fixed-->
+    <h3>Fixed</h3>
+    <p>O elemento ajustado com sua propriedade <em>position</em> no valor fixed, irá ficar fixo em uma determinada posição da página, e mesmo que a mesma sofra rolagem o elemento vai ser manter no mesmo lugar, seguindo qualquer movimentação da página.
+    Observe o cubo marrom acompanhando você desde o cabeçalho da página. Isso é um elemento com a propriedade position configurado para <strong>fixed.</strong></p>
+   
+    <div style="position:fixed;height: 50px;width: 50px;background-color: rgb(135, 89, 89); top:0px; right: 0%;transform: translateZ(3); z-index: 1;">FIXED</div>
+    <div style="position:relative;height: 50px;width: 50px; top: 1000px;"></div>
 
+    <h3>sticky</h3>
+    <p>A o valor sticky precisa de uma página própria para demonstrar as suas características de maneira simples, <a href="../estilo/stilo-css-propriedadeSticky.html"><abbr title="position:sticky">aqui</abbr></a></p>
+
+ 
 
 </body>
 </html>

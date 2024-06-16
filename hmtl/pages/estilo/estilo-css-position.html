@@ -6,12 +6,25 @@
     <link rel="stylesheet" href="../../../css/std-global-style-1.css">
     <link rel="icon" href="../../../img/icones/icons8-online-32.png" type="Imagem/x-icon">
     <style>
-        .divbase{
-            width: 80px;
-            height: 80px;
-            background-color: rgb(190, 193, 196);
-            
-        }
+      .divPai{
+        background-color: rgb(239, 99, 90);
+        height: 200px;
+        width:200px;
+        position: relative;
+        margin: 0 auto;
+
+      }
+      .divFilho{
+        height: 50px;
+        width: 50px;
+        background-color: chartreuse;
+        position: absolute;
+        margin-right: 50%;
+        margin-top: 50%;
+        right: -25px;
+        top:-25px;
+
+      }
     </style>
     <title>CSS- Position</titleP></title>
 </head>
@@ -33,20 +46,46 @@
         <li>Fixed</li>
         <li>Stick</li>
     </ul>
+<!--Static--->
     <h3>Static</h3>
+    <p>O valor postion:static é o valor padrão dos elementos html. Não é preciso adicionar nenhum position para que todos os elementos da página contenham esse valor.por padrão, ele não pode ser movido de lugar através da alteração dos valores de atributos, seu nascimento (por assim dizer) fica na área superior esquerda acompanhando o fluxo.</p>
 <!--RELATIVE-->
     <h3>Relative</h3>
     <p>O position relative é sempre relativo a ele mesmo ou seja, seu local natural no <a href="../../apendices/apendice-6-fluxo.html"><abbr title="Flow-fluxo html">fluxo</abbr></a> da página. Se ele for ajustado para algum ponto para além do seu original, ele vai pegar esse ponto de referência como base e se mover através dele caso sejam aplicadas modificações de localização através da página.</p>
-    <div class="divbase" style="position:absolute;left: 700px;"><div style="position:relative;transform:translateY(30px);">RELATIVE</div></div>
+ 
 <!--FIM RELATIVE-->
 
 <!--ABSOLUTE-->
     <h3>ABSOLUTE</h3>
-    <p>Se posiciona em relação ao elemento pai, desde que o elemento pai tenha a position definida</p>
-    <div class="divbase" style="position:absolute;left: 400px;"><div style="position:absolute;top: 40%;">ABSOLUTE</div></div>
-
+    <p>Se posiciona em relação ao elemento pai, desde que o elemento pai tenha a position definida diferente de static. Caso não existe um element parent(pai) próximo ele vai procurar outro e outro e caso não houve nenhum, ele vai seguir o fluxo natural da página. É importante frisar que quando um elemento tem como <em>position: absolute</em> sendo child (filho) de algum elemento que, possua position diferente de static o filho vai receber como referência a posição do pai, de maneira que, qualquer modificação em seu valor de localização passará a contar a partir da posição do elemento pai. </p>
+<!--Fixed-->
     <h3>Fixed</h3>
     <p>O elemento ajustado com sua propriedade <em>position</em> no valor fixed, irá ficar fixo em uma determinada posição da página, e mesmo que a mesma sofra rolagem o elemento vai ser manter no mesmo lugar, seguindo qualquer movimentação da página.</p>
+
+
+    <h2>Como Centralizar um elemento dentro de outro elemento?</h2>
+
+    <p>Existem algumas formas de fazer isso. Tomando div como elemento escolhido para essa demonstração, o código é:</p> 
+
+    <pre><code><textarea name="t_a34" id="" disabled rows="6" cols="100">
+
+            right: 50%;
+            margin-right: subtrair metade do valor de largo do elemento filho em pixels;
+            top:50%;
+            margin-top: subtrair metade do valor da altura do elemento filho  em pixels;
+        
+    </textarea></code></pre>
+    Levando em consideração que o elemento filho é uma div com <b>50x50px</b>, vejamos o código css implementado. 
+
+    <pre><code><textarea name="t_a35" id="" disabled rows="4" cols="50">
+        right: 50%;
+        margin-right: -25px;
+        top:50%;
+        margin-top: -25px;
+    </textarea></code></pre>
+    <p style="text-align: center;"><B>Veja o exemplo</B></p>
+    
+    <div class="divPai"><strong>Pai</strong><div class="divFilho"><strong>Filho</strong></div></div>
 
 
 </body>

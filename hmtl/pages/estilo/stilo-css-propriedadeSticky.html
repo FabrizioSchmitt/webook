@@ -5,16 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../css/std-global-style-1.css" type="text/css">
     <link rel="icon" href="../../../img/icones/icons8-online-32.png">
+    <style>
+       
+        .divSticky{
+            position: sticky;
+            background-color: chartreuse;
+        }
+        .divParede{
+            background-color: blue;
+        }
+        .div{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
     <title>Propriedade position:sticky</title>
-</head>
-    <div><nav>
+</head>    
+<body>
+    <div class="NavheaderBar_1"><nav>
         <button><strong><a href="../../index.html">index</a></strong></button>
         <button><strong><a href="../estilo/estilo-css-position.html">Propriedade Position CSS</a></strong></button>
     </nav></div>
     <h1>Position:Sticky</h1>
     <hr>
-
-<body>
-    
+    <div class="divSticky div" style="top: 0px; left: 0px;">Sticky</div>
+    <div class="divParede div" style="position: relative;top: 50px; left: 0px;">Parede</div>
+    <div class="div" style="position: relative; left: 0px; top: 1000px;background-color: darkcyan;">Parede</div>
+    <div class="div" style="position: relative; left: 0px; top: 800px;background-color: rgb(126, 167, 167);">Parede</div>
 </body>
 </html>

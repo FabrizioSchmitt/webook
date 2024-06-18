@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/std-global-style-1.css">
+    <link rel="icon" href="../../../img/icones/icons8-online-32.png">
+    <title>CSS - Flexbox </title>
+    <style>
+
+        .container{
+            display: flex;
+           /* background-color: royalblue;*/
+        }
+        .objeto{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: solid 1px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="NavheaderBar_1">
+            <nav>
+                <button><strong><a href="../../index.html">Index</a></strong></button>
+                <button><strong><a href="../../menus/menus-tags-estilo.html">Menu de estilo</a></strong></button>
+            </nav>
+        </div>
+        <h1>Flexbox</h1>
+        <hr>
+    </header>
+<main>
+    
+        <h2>Flex</h2>
+        <p>1- Uma flex-box precisa ser: 1 elemento flex aninhando outros elementos flex que herdarão a propriedade flex do elemento pai.</p>
+    
+        <h3>FLex-Direction-row</h3>
+        2- Flex-direction row é a orientação natural; em linha
+
+        <div class="container">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            
+        </div>
+    
+        <h3>Flex-Direction-column</h3>
+        3- Flex-direction column é a orientação para se trabalhar com flex em coluna.br
+
+        <div class="container" style="flex-direction: column;margin-top: 40px;">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+           
+        </div>
+    
+        <h3>Flex-Wrap</h3>
+    
+        <p>Devido ao aninhamento dos objetos em uma direção fixa, o objeto/elemento pai vai tomar para si um espaço de domínio, o qual pode ser tomando por elementos filhos em um determinado momento. Se isso acontecer, os elementos filhos poderão passar a dividir proporcionalmente o espaço delimitado. Caso não seja a intenção existe o recurso chamado: flex-wrap. Essa propriedade css permite que cada elemento filho mantenha a integridade de sua definição original em tamanho, o que pode eventualmente causar quebra de linha na página html. Nowrap é o estado original, que não mantém integridade, wrap é o valor que mantém a integridade.</p>
+
+        <h4>Modelo sem wrap</h4>
+
+        <div class="container" >
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+        
+        </div>
+        
+        
+        <h4>Modelo com wrap</h4>
+
+
+        <div class="container" style="flex-wrap: wrap;" >
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+        
+        </div>
+    
+        <h2>Justify-Content</h2>
+    
+        <p> Justify-contente é uma propriedade CSS que serve para organizar o conteúdo interno de um container de maneira que ele fique distribuído simetricamente segundo determinada diretriz</p>
+
+      
+    
+        <h3>Space-Between</h3>
+        <p>Space-between é um dos valores da propriedade justify-content que aumenta ao máximo a distância de um elemento em relação ao outro. </p>
+
+        <div class="container" style="justify-content: space-between;">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            
+        </div>
+    
+        <h3>Space-Evenly</h3>
+        <p>É o valor da propriedade justify-content que proporciona simetria a todos os elementos dentro de um mesmo espaço ocupado.</p>
+
+        <div class="container" style="justify-content:space-evenly;">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            
+        </div>
+    
+        <h3>Space-Around</h3>
+        <p>
+            É o valor da propriedade justify-content que cria um espaço x interno entre elementos
+            na mesma linha, porém o espaço reservado para os cantos da página será a metade do espaço reservado para o espaçamento interno.
+        </p>
+
+        <div class="container" style="justify-content:space-around">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            
+        </div>
+    
+        <h3>End e Start</h3>
+        <p>São valores da propriedade justify-content que fazem com que o os elementos dentro da área delimitada do elemento pai (flex) se organizem começando ou pelo começo da linha à esquerda (:start) ou pelo final (end).</p>
+        <p style="text-align: end; font-weight: bold;">END</p>
+        <div class="container" style="justify-content:end">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            
+        </div>
+        <p style="text-align: left; font-weight: bold;">Start</p>
+        <div class="container" style="justify-content:start; margin-top: 10px;">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            
+        </div>
+    
+        <h3>Align-itens</h3>
+    
+        <p>Align-itens é uma propriedade CSS que alinha os itens em dado local dentro do container a depender dos valores escolhidos.
+        Vale ressaltar que align-itens pode ser mesclado com justify-content para se alcançar a localização e alinhamentos desejados. </p>
+        <p>Nos próximos exemplos o espaço ocupado pelo container "pai" será mostrado para que se tenha ideia de como a distribuição dos objetos filhos e o display realmente funciona. <br>
+        <em>OBS: A estrutura container pai estava presente em todos os exemplos anteriores, apenas não foi mostrado diretamente.</em> </p>
+
+        <p><strong>align-items:end</strong></p>
+
+        <div class="container" style="align-items: end; background-color: blue; height: 200px;">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            
+        pai</div>
+        <p><strong>align-items:center</strong></p>
+
+        <div class="container" style="align-items:center; background-color: blue; height: 200px;">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            
+        pai</div>
+        <p><strong>align-items:center + justify-content:space-between</strong></p>
+        <div class="container" style="align-items:center; background-color: blue; height: 200px; justify-content: space-between;">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            
+        pai</div>
+        <p><strong>align-items:center +flex direction:column+flex-wrap</strong></p>
+        <div class="container" style="align-items: center; background-color: blue; height: 300px; flex-direction: column;flex-wrap: wrap;">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            
+        pai</div>
+        <p><strong>align-items:center + flex-direction: row + justify-content: center</strong></p>
+        <div class="container" style="align-items: center; flex-direction: row; justify-content: center; background-color: blue; height: 200px;">
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            <div class="objeto">Filho</div>
+            
+        pai</div>
+</main>
+<footer>
+
+</footer>
+    
+</body>
+</html>

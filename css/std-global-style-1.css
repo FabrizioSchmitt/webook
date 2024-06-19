@@ -7,6 +7,12 @@ body{
 p{
     background-color:bisque;
     text-align: justify;
+    width: 99%;
+    
+    margin: 0px auto;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
 }
 table,th,tr,td{
     border:solid 1px;
@@ -24,7 +30,7 @@ ol{
 }
 ul{
     background-color: rgb(212, 196, 177);
-    max-width: 50%;
+    
 }
 /*estilo de componentes*/
 textarea{
@@ -32,10 +38,13 @@ textarea{
     font-weight: bolder;  
 }
 .NavheaderBar_1{
-    max-width: 95%;
+    max-width: 100%;
     background-color: rgb(225, 203, 34);
     max-height: 10%;
     margin: -6px auto; 
+}
+.mainHeader{
+    background-color: burlywood;;
 }
 .NavComponentesCenter{
     

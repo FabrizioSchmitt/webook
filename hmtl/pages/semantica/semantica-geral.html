@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +8,157 @@
     <title>Regras de Semântica</title>
 </head>
 <body>
-    <a href="../../menus/menu-exemplos.html">Menu exemplos</a>
-    <hr>
-    <a href="../../exemplos/exemplos-html-testes/paginaestruturada-exemplo.html"></a>
-    
- <!--
-    Estrutura de uma página
-
-    <header>
-        <h1>   Titulo </h1> 
+    <header style="background-color:burlywood;">
+        
+            <nav class="NavheaderBar_1">
+                <div class="divHeader"> 
+                    <button><strong><a href="../../index.html">Index</a></strong></button>
+                    <button><strong><a href="../../menus/menu-semantica.html">Menu Semântica</a></strong></button>
+                </div>
+                
+            </nav>
+        <h1 style="text-align: center;">Semântica geral</h1>
     </header>
+ 
+    <main>
 
-    <section>   //Conteúdo adicional da página.
-        <header> //toda header precisa de uma heading h1-h6
-            <h2> titulo </h2>
-        </header>
-        <article>
-
-            <footer> </footer>
-        </article>
+        <section style="width: 95%; margin: 0 auto;">
+            <section>
+                <header>
+                    <h2>A divisão semântica</h2>
+                </header>
+            </section>
+         <section>   
+        <p>
+            Estrutura de uma página
+            A semântica de um site é utilizada para dar sentido em seus componentes/partes para além de uma mera questão visual.  Ela serve para: operações de acessibilidade, aplicações de SEO, navegação interna.
+            
+        </p>
+        <p>
+            Os robôs de leitura usam as tags para encontrarem conteúdo no documento, sendo assim é preciso enviar as informações precisas e para tanto precisamos utilizar as tags corretas para cada porção do site.
+            Podemos dividir cada página html em 3 pedaços básicos: Cabeçalho, conteúdo principal e rodapé.
+            Cada alguns desses elementos, podem conter em sí outros elementos similares. Por exemplo: um elemento conteúdo principal pode ter em si um cabeçalho e um rodapé, o outros elementos.
+            Cada container de extra de espaço dentro de um corpo principal é o que chamamos de seção. Um elemento principal pode conter uma ou diversas seções, e cada seção pode ter seus próprios rodapés e cabeçalhos. Existe uma exceção para essa regra que á a do próprio elemento principal, pode haver apenas 1 elemento principal por documento.
+            
+        </p>
+        <p>
+            Levando em consideração essas ponderações e regras, vamos iniciar a apresentação passo a passo da representação visual de uma página HTML levando em consideração a semântica como critério de marcação.
+            
+        </p>
     </section>
 
+    <section>
+        <header><h2>Modelo de estrutura simples representada</h2></header>
+        <section>
+            <p>Existem algumas formas de representar esse conteúdo de maneira didática, a forma a seguir é uma representação meramente esquematizada sem implementação, usando uma lista desordenada.</p>
 
-    -->    
+            <section>
+                
+                <ul>
+                    <li>head</li>
+                    <li>body
+                        <li>header 
+                            <li>Título principal</li>
+                        </li>
+                        <li>main</li>
+                        
+                    </li>
+
+                </ul>
+            </section>
+        </section>
+    </section>
+        
+    
+           
+    <pre><code><textarea name="" disabled rows="5" cols="80" id="">
+&lt;head&gt;
+    Aqui são as tags metas e demais informações usuais do site.  
+    Mas, nosso foco não é aqui, e sim aqui na tag body.
+&lt;/head&gt;
+                
+    </textarea></code></pre>
+    
+    
+    <pre><code><textarea name="" disabled rows="5" cols="70" id="">
+&lt;body&gt;       
+&lt;header &gt;
+    O título, esse seria o título principal da página. 
+    Ele representa a titularidade do assunto principal.
+&lt;/header &gt;
+
+        </textarea></code></pre>
+            <pre><code><textarea name="" disabled rows="4" cols="65" id="">
+&lt;header &gt;
+O título, esse seria o título principal da página. Ele representa a titularidade do assunto principal.
+&lt;/header &gt;
+            
+            </textarea></code></pre>
+
+            <pre><code><textarea name="" disabled rows="" cols="" id="">
+                
+            </textarea></code></pre>
+            
+                &lt;main &gt;
+                O Assunto principal, essa tag é única no documento. Ela vai ser o corpo principal do documento, e é possível que a mesma seja divida em subseções.
+                    Essa tag é única por documento;
+                    Para cada subseção em um documento, para melhorar a semântica, devemos utilizar uma tag section, dessa forma a antiga div se torna uma section.
+                &lt;section &gt;
+                &lt;header &gt; Cabeçalho da subseção &lt;/header &gt;
+            
+                conteúdo da section.
+            
+                E por consequência, podemos ter um rodapé para cada subseção.
+                &lt;footer &gt;
+                -Informações de rodapé.
+                &lt;/footer &gt;
+                &lt;/section &gt;
+                &lt;/main &gt;
+                &lt;footer &gt;
+                Rodapé do conteúdo principal.
+                &lt;/footer &gt;
+            
+          
+        
+        <p>
+            É possível ainda que, fora do main existam assuntos que não sejam próximos o suficiente para estarem dentro do corpo principal da página distribuídos em sections, mas que ainda façam parte do conteúdo do site como um todo, nesse caso, usamos referências externas a tag main, podendo ser esses conteúdos textos complementares, imagens ou mesmo (comumente) link para outras páginas internas ou externas.
+            
+        </p>      
+        
+        <p>
+             Esse tipo de ligação externa ao main é aloca em tags aside.
+                &lt;aside &gt;
+                Conteúdo extra
+                1-
+                2-
+                3-
+                &lt;/aside &gt;
+             Agora as representações visuais desse conteúdo.
+        </p>
+    </section>
+    </main>
+    <footer>
+        informações de rodapé
+    </footer>
+    <!--
+    A tag nav serve para agrupar elementos importantes de navegação da página. É ideal que exista somente uma tag nav por página, mas é possível haver outras. 
+
+    article é uma tag que determina um pequeno bloco de informação que pode ser consumida independente do conteúdo principal da página. 
+
+    aside é uma tag que serve para inserir material complementar, mas que em sendo removida o conteúdo principal não é afetado. 
+    -->
 </body>
 </html>
+
+
+
+
+<pre><code><textarea name="" disabled rows="" cols="" id="">
+                
+            </textarea></code></pre>
+
+
+
+
+
+-->

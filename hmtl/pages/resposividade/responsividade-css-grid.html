@@ -21,15 +21,67 @@
 
     Propriedades e valores
 
-    - grid-id-template-columns: x x x x x  -Cada x é uma coluna que, ao ser adicionada, informa o valor de tamanho especificado para a mesma. Os valores podem ser dos tipos suportados por css: cm,px,rem, etc...
+    - grid-template-columns: x x x x x  -Cada x é uma coluna que, ao ser adicionada, informa o valor de tamanho especificado para a mesma. Os valores podem ser dos tipos suportados por css: cm,px,rem, etc...
 
     -grid-template-rows: x x x x x - Da mesma forma que template-columns, o grid-template-rows fornece um tamanho pré-estabelecido para cada uma das linhas adicionadas dentro dessa propriedade. 
 
     Ambas templates podem ser combinadas para fornecer um tipo de formatação único ás células do grid. Caso nada for adicionado ou alguma célula for adicionada fora do range dessas propriedades, o padrão standard será aplicado, ou algum padrão definido em algum momento através do efeito cascata de estilos. 
 
-    grid-column-gap x; define o tamanho do gap (espaço vazio) entre colunas. Como as propriedades anteriores, diversas unidades de medidas podem ser aplicadas à essa demarcação.
+    gap-column x; define o tamanho do gap (espaço vazio) entre colunas. Como as propriedades anteriores, diversas unidades de medidas podem ser aplicadas à essa demarcação. 
+
+    gap-rows tem o mesmo efeito de gap-column, porém ele afeta
+    as linhas.  
+
+    grid-auto-rows: x; Especifica um valor padrão para o tamanho das células que forem sendo adicionadas em uma linha, caso nenhum valor tenha sido especificado.
+
+    grid-gap: x; define o espaço das gaps tanto em linhas quanto em colunas. 
 
     grid-auto-rows: x; Especifica um valor padrão para o tamanho das células de uma linha na grid. 
+
+    repeat e minmax
+
+    Repeat e minmax São "funções" de estilo que permitem uma forma de diminuir o trabalho ou mesmo automatizar a alocação de células em uma grid, com elas é possível determinar de antemão quantidades de colunas e e linhas bem como o seu tamanho. As configurações podem ser feitas usando unidades de medidas diferentes. 
+
+
+    Repeat()
+
+    grid-template-columns: repeat(n, y)
+    grip-template-rows: repeat(n,x)
+
+    sendo n o número de vezes eu que colunas ou linhas será repetidas, y a dimensão das colunas e x a dimensão das linhas. 
+
+    É possível ainda adicionar mais células na mesma definição (fora da função). Exemplo:
+
+    grid-template-columns: repeat(4,10%) 50px 50px 50px;
+
+    No exemplo acima, estamos evocando uma grid com 4 colunas, 10% de dimensão da página em tamanho (4,10%), e logo após mais 3 colunas serão adicionas, cada uma com seu tamanho definido em 50 pixels.   
+
+    Minmax
+
+    Usando a mesma forma que repeat, minmax consegue definir mínimos e máximos para as células. 
+
+    grid-template-columns: minmax(mi,ma)
+
+    Sendo mi o tamanho mínimo e ma o tamanho máximo de uma célula. É possível, assim como acontece na função template, adicionar células após a postulação da função. 
+
+    grid-template-columns: minmax(10px, 30%) 100px 50px 40%;
+
+    FR unidade de medida. 
+
+    FR, assim como px, rem e outras fr tbm assume uma unidade de medida, porém ela se baseia em frações. Ou seja, podemos distribuir as células pela página de acordo com quantas partes nós queremos que cada uma das frações ocupe. 
+
+    exemplo:
+
+    grid-template-column: 1fr 1fr 1fr;
+    ou
+    grid-template-column: 2fr 1fr;
+    
+    Podemos tbm mesclar essas unidades de medida com os métodos repeat, por exemplo:
+    grid-template-column: repeat(3,1fr);
+
+    align-self 
+    Precisa ser usado em cada célula de maneira independente. 
+
 
 
     """-1rem é o tamanho da fonte no documento raiz. 1 Pixel pode variar de tamanho dependendo do dispositivo, por conta disso ele se adapta melhor. Geralmente a fonte tem 16px, logo 1rem - 16px """"

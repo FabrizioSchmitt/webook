@@ -57,12 +57,41 @@
                 <ul>
                     <li>head</li>
                     <li>body
-                        <li>header 
-                            <li>Título principal</li>
-                        </li>
-                        <li>main</li>
-                        
+                        <ul>
+                            <li>header</li>
+                        </ul>
+                        <ul>
+                            <li>main
+                                <ul>
+                                    <li>1-article
+                                        <ul><li>1.1section</li>
+                                            <ul>
+                                            <li>1.1.1 header</li>
+                                            <li>1.2.1 footer</li>
+                                            </ul>
+                                        </ul>
+                                    </li>
+                                    <li>2-article
+                                        <ul><li>2.1section</li>
+                                            <ul>
+                                            <li>2.1.1 header</li>
+                                            <li>2.2.1 footer</li>
+                                            </ul>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>aside 
+                                <ul>
+                                    <li>header</li>
+                                    <li>footer</li>
+                                </ul>
+                            </li>
+                            <li>footer</li>
+                        </ul>
                     </li>
+                    <li>body</li>
+
 
                 </ul>
             </section>
@@ -70,21 +99,28 @@
     </section>
         
     
+<section style="width: 70%; margin: 0px auto;" >
+
+    <header>
+        <h3>Código semântico explicado</h3>
+    </header>
            
-    <pre><code><textarea name="" disabled rows="5" cols="80" id="">
+    <pre><code><textarea name="" disabled rows="5" cols="80" id="" style="width: 100%; justify-content: left; margin: 2erm;">
 &lt;head&gt;
-    Aqui são as tags metas e demais informações usuais do site.  
-    Mas, nosso foco não é aqui, e sim aqui na tag body.
+Aqui são as tags metas e demais informações usuais do site.  
+Mas, nosso foco não é aqui, e sim aqui na tag body.
 &lt;/head&gt;
                 
     </textarea></code></pre>
-    
+ 
+
+        
     
     <pre><code><textarea name="" disabled rows="5" cols="70" id="">
 &lt;body&gt;       
 &lt;header &gt;
-    O título, esse seria o título principal da página. 
-    Ele representa a titularidade do assunto principal.
+O título, esse seria o título principal da página. 
+Ele representa a titularidade do assunto principal.
 &lt;/header &gt;
 
         </textarea></code></pre>
@@ -93,7 +129,8 @@
 O título, esse seria o título principal da página. Ele representa a titularidade do assunto principal.
 &lt;/header &gt;
             
-            </textarea></code></pre>
+         </textarea></code></pre>
+</section>
 
             <pre><code><textarea name="" disabled rows="" cols="" id="">
                 
@@ -146,7 +183,22 @@ O título, esse seria o título principal da página. Ele representa a titularid
     article é uma tag que determina um pequeno bloco de informação que pode ser consumida independente do conteúdo principal da página. 
 
     aside é uma tag que serve para inserir material complementar, mas que em sendo removida o conteúdo principal não é afetado. 
+
+
+
     -->
+
+
+    Um link em HTML serve principalmente para alterar a URL e direcionar o usuário para outra página. Eles só são focalizáveis quando o atributo href estiver presente.
+
+Já os botões em HTML servem mais para enviar dados de um formulário, ou aplicar comportamentos em modais, vídeos, áudios, menus, carrosséis, etc.
+
+Se em última análise você precisar fazer um link ou botão com outras tags, use o atributo role para informar a semântica correta aos leitores de tela.
+
+Acesse o Can Include para testar hierarquias corretas de tags HTML, tanto para links e buttons, quanto para o resto.
+
+E aí, esse conteúdo te ajudou de alguma forma? Deixa aí nos comentários ;
+https://demenezes.dev/posts/link-botao-button-html/
 </body>
 </html>
 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício grid 3</title>
+</head>
+<body>
+    <h1>Exercícios grid #3</h1>
+
+    <h3>1</h3>
+    <!--Teste de implementação com grid-template-->
+
+    <div style=" 
+    width:fit-content;
+    display:grid;
+    background-color: blue;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px;
+    row-gap: 5px;
+    column-gap: 5px;">
+    <div style="background-color: red; border:1px solid"></div>
+    <div style="background-color: red; border:1px solid"></div>
+    <div style="background-color: red; border:1px solid"></div>
+    <div style="background-color: red; border:1px solid"></div>
+    <div style="background-color: red; border:1px solid"></div>
+    <div style="background-color: red; border:1px solid"></div>
+    <div style="background-color: red; border:1px solid"></div>
+    <div style="background-color: red; border:1px solid"></div>
+    <div style="background-color: red; border:1px solid"></div>
+</div>
+<h3>2</h3>
+<!-- Implementando o método repeat-->
+<div style="display: grid; background-color:rgb(219, 199, 199); grid-template-columns: repeat(4,50px); grid-template-rows:repeat(4,50px);gap: 3px; width: fit-content;;">
+    <!--OBjetos-->
+    <div style="background-color:rgb(122, 196, 87);border: 1px solid;grid-column-start:1;grid-column-end:5;">1</div>
+    <div style="background-color:chocolate;border: 1px solid;">2</div>
+    <div style="background-color:chocolate;border: 1px solid;">3</div>
+    <div style="background-color:chocolate;border: 1px solid;">4</div>
+    <div style="background-color:chocolate;border: 1px solid;">5</div>
+    <div style="background-color:chocolate;border: 1px solid;">6</div>
+    <div style="background-color:chocolate;border: 1px solid;">7</div>
+    <div style="background-color:chocolate;border: 1px solid;">8</div>
+    <div style="background-color:chocolate;border: 1px solid;">9</div>
+    <div style="background-color:chocolate;border: 1px solid;">10</div>
+    <div style="background-color:chocolate;border: 1px solid;">11</div>
+    <div style="background-color:chocolate;border: 1px solid;">12</div>
+    <div style="background-color:chocolate;border: 1px solid;">13</div>
+    <div style="background-color:chocolate;border: 1px solid;">14</div>
+    <div style="background-color:chocolate;border: 1px solid;">15</div>
+    <div style="background-color:chocolate;border: 1px solid;">16</div>
+
+</div>
+
+<!--Implementando o método end e start para columns e rows-->
+<h3>3</h3>
+<div style="display:grid; background-color: red;
+    grid-template-columns: repeat(3,50px);grid-template-rows:repeat(3,50px);margin: 2rem; width: fit-content;
+    ">
+    <div style="background-color: blue;border:1px solid; text-align:center; line-height: 50px; font-weight: bolder; grid-column-start: 1;grid-column-end: 4;">1</div>
+    <div style="background-color: blue;border:1px solid; text-align:center; line-height: 50px; font-weight: bolder;grid-row-start:2;grid-row-end:4;">2</div>
+    <div style="background-color: blue;border:1px solid; text-align:center; line-height: 50px; font-weight: bolder;grid-column-start: 2;grid-column-end: 4;">3</div>
+    <div style="background-color: blue;border:1px solid; text-align:center; line-height: 50px; font-weight: bolder;">4</div>
+    <div style="background-color: blue;border:1px solid; text-align:center; line-height: 50px; font-weight: bolder;">5</div>
+   
+   
+   
+
+    
+    
+</div>
+
+
+</body>
+</html>

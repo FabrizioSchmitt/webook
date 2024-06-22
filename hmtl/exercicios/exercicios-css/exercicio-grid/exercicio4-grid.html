@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4- Layout em grid</title>
+    <style>
+      
+        .bloco{
+            background-color: rgb(224, 217, 122);
+            display:grid;
+            grid-template-columns: repeat(3,minmax(100px,fit-content));
+            grid-template-rows: repeat(3,minmax(100px,fit-content));
+            gap: 1rem;
+        }
+        .blocoInterno{
+            background-color: bisque;
+           
+
+        }
+        .blocoInterno2{
+            background-color: darkgray;
+        }
+
+        #headerS{
+            grid-row-start: 1;
+            grid-row-end: 1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: darkgreen;
+            
+            
+            
+
+        }
+        #mainS{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: blueviolet;
+           
+           
+        }
+        
+        #asideS{
+            grid-row-start: 2;
+            
+            background-color: rgb(247, 244, 241);
+
+        }
+        #footerS{
+            grid-row-start:3;
+            grid-row-end: 5;
+            background-color: darksalmon;
+            height: fit-content;
+           
+        }
+      
+        .sectionClass{
+            border: 1px solid;
+            background-color: rgb(164, 77, 245);
+            margin: 1px;
+            
+        }
+        
+    </style>
+</head>
+<body class="bloco" id="bodyS">
+    <header class="blocoInterno"id="headerS" ><h1>Exercício 4- Layout com Grid</h1></header>
+    <main class="blocoInterno" id="mainS">
+        <article >
+            <h2>Article</h2>
+
+            <!--bloco 1-->
+           <section class="sectionClass">
+            <header><h2>Section 1</h2></header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aperiam incidunt ea, ipsam, animi laboriosam porro recusandae dolorum quas at repellat harum impedit reprehenderit totam corrupti excepturi quidem error nesciunt?</p>    
+           </section>
+
+           <!--Bloco 2-->
+           <section class="sectionClass">
+            <header><h2>Section 2</h2></header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti a natus maiores nostrum, ad quas! Pariatur odio modi ea, harum cupiditate iste aliquam quisquam incidunt doloribus vitae, hic laborum dignissimos?</p>
+           </section>
+
+           <!--Bloco3-->
+           <section class="sectionClass">
+            <header><h2>Section 3</h2></header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consectetur recusandae nihil explicabo dolores itaque perspiciatis rem, eligendi exercitationem odio ratione fugiat dolorum, suscipit nisi illo non similique sunt omnis?</p>
+           </section>
+        </article>
+    </main>
+    <aside class="blocoInterno" id="asideS">
+        <header><h3>Barra Lateral</h3></header>
+        <ul>
+            <li><a href="#">link1</a></li>
+            <li><a href="#">link2</a></li>
+            <li><a href="#">link3</a></li>
+        </ul>
+    </aside>
+        
+        
+    </aside>
+    <footer class="blocoInterno blocoAside" id="footerS" >
+        <header><h4>Rodapé</h3></header>
+    <p><em>informações adicionais</em><br>
+    <small>informações de rodapé</small></p> 
+    </footer>
+
+    
+    
+</body>
+</html>

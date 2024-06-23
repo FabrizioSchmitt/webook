@@ -97,6 +97,19 @@
     """-1rem é o tamanho da fonte no documento raiz. 1 Pixel pode variar de tamanho dependendo do dispositivo, por conta disso ele se adapta melhor. Geralmente a fonte tem 16px, logo 1rem - 16px """"
     
     
+    grid-column-start/grid-column-end & grid-row-start/grid-row-end.
+
+    Ambas as funções determinam onde uma determinada coluna começa e terminada dentro do Grid. Ao contrário das funções anteriores onde as características das células eram determinadas através da célula pai, nesse caso cada uma das células que se pretende modificar inicio e fim deve ser declarada na própria célula filho. 
+    Exemplo:
+    grid-column-start: 1;
+    grid-column-end:3;
+
+    No exemplo acima, a coluna vai ser iniciada na coluna 1 e encerrada de fato na coluna 2. E ai temos uma nuance do método. Ao determinar o final do espaço de ocupação da grid em (grid-column-end:3) não estamos determinando até qual espaço de célula a célula filho irá ocupar, e sim, até qual o limite adjacente ela irá chegar.    
+    Existe uma forma simplificada para essa função que é simplesmente fazendo essa declaração:
+
+    grid-column: x/z  - Sendo x o valor inicial da column e z o valor final. 
+
+    Os métodos de manipulação de linhas (rows) é exatamente o mesmo, com as mesmas perspectivas e função com a diferença apenas que nesse caso estaremos operando linhas,e com a sintaxe que é: grid-rows-start:, grid-rows-end: e grid-rows: x/z; 
     -->
     
     

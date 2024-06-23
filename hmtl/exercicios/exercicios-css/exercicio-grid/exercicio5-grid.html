@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*  Exemplo- 1*/
+        .wrapper{   
+            display: grid;   
+             
+            @media screen and (max-width:480px){
+            display: grid;
+            grid-template-columns: repeat(1,minmax(100px,1fr));
+            grid-template-rows: repeat(5,minmax(100px,fit-content));
+            padding: 5px;
+            background-color: red;
+            }
+            @media screen and (min-width:481px) and (max-width:700px){
+            display: grid;
+            grid-template-columns: repeat(2,minmax(100px,1fr));
+            grid-template-rows: repeat(5,minmax(100px,fit-content));
+            padding: 5px;
+            background-color: yellow;
+            }
+            @media screen and (min-width:701px) {
+                display:grid;
+                grid-template-columns: repeat(3,minmax(100px,2fr));
+                grid-template-rows: repeat(5,minmax(150px,fit-content));
+                padding: 5px;
+                background-color: aquamarine;
+            
+        }    
+            
+        }
+        .wrapperS{
+            background-color: rgb(176, 176, 247);
+            border: 1px solid black;
+        }
+
+        /*Exemplo 2 */
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h2>exemplo-1</h2>
+
+    <div class="wrapper">
+        <div class="wrapperS">1</div>
+        <div class="wrapperS">2</div>
+        <div class="wrapperS">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsam perspiciatis. Quisquam illum placeat eligendi optio ex neque deleniti perferendis, fuga ducimus iste nostrum. Molestiae totam aut placeat nostrum nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nostrum magni fugit consequuntur labore, voluptatem dolorem quam rem commodi vitae eaque autem officia sequi. Culpa tenetur inventore rem cum necessitatibus!</div>
+        <div class="wrapperS">4</div>
+        <div class="wrapperS">5</div>
+       
+    </div>
+    
+
+    
+</body>
+</html>

@@ -8,11 +8,23 @@
         body{
             background-color: red;
         }
-        @media only screen and (max-width: 600px){
+        
+            
+        @media only screen and (min-width:251px) and (max-width: 600px){
             body{
-                background-color: black;
+        background-color: black;
+        }
+    }
+        @media (min-width:100px) and (max-width:250px){
+            body{
+                background-color: blue;
             }
-
+            
+        }
+        @media (min-width:20px) and (max-width:99px){
+            body{
+                background-color: darkcyan;
+            }
         }
        
     </style>

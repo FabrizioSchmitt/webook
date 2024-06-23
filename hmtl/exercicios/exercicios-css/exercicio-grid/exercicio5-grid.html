@@ -8,38 +8,55 @@
 
         /*  Exemplo- 1*/
         .wrapper{   
-            display: grid;   
-             
-            @media screen and (max-width:480px){
+            
             display: grid;
-            grid-template-columns: repeat(1,minmax(100px,1fr));
-            grid-template-rows: repeat(5,minmax(100px,fit-content));
-            padding: 5px;
-            background-color: red;
-            }
-            @media screen and (min-width:481px) and (max-width:700px){
-            display: grid;
-            grid-template-columns: repeat(2,minmax(100px,1fr));
-            grid-template-rows: repeat(5,minmax(100px,fit-content));
-            padding: 5px;
-            background-color: yellow;
-            }
-            @media screen and (min-width:701px) {
-                display:grid;
-                grid-template-columns: repeat(3,minmax(100px,2fr));
-                grid-template-rows: repeat(5,minmax(150px,fit-content));
+          
+           
+            
+        }
+        @media screen and (max-width: 450px) {
+                .wrapper{
+                display: grid;
+                background-color: red;
                 padding: 5px;
-                background-color: aquamarine;
-            
-        }    
-            
+                grid-template-columns: repeat(1,minmax(100px,fit-content));
+                grid-template-rows: repeat(5,minmax(50px,fit-content));
+                }
+                
+            }
+            @media screen and (min-width: 451px) and (max-width: 600px) {
+                .wrapper{
+                display: grid;
+                background-color: blue;
+                padding: 5px;
+                grid-template-columns: repeat(2,minmax(150px,1fr));
+                grid-template-rows: repeat(3,minmax(70px,1fr));
+            }
+        }
+        @media (min-width: 601px) and (max-width: 750px){
+            .wrapper{
+                display:grid;
+                background-color: rgb(195, 244, 79);
+                padding:5px;/*  */
+                grid-template-columns: repeat(3,minmax(200px,2fr));
+                grid-template-rows: repeat(3,minmax(100px,1fr));
+            }
         }
         .wrapperS{
             background-color: rgb(176, 176, 247);
             border: 1px solid black;
         }
 
-        /*Exemplo 2 */
+      
+
+       wrapper2{
+
+        display:grid;
+
+       }
+       wrapperS2{
+        background-color: blue;
+       }
 
 
         
@@ -57,6 +74,10 @@
         <div class="wrapperS">5</div>
        
     </div>
+
+    <h2>exemplo 2</h2>
+
+
     
 
     

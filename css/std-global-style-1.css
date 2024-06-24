@@ -1,11 +1,11 @@
 /* estilo de body*/
 body{
-    background-color: antiquewhite;
+    background-color:#fadab0;
     font-size: 16;
     font-family: sans-serif;
 }
 p{
-    background-color:bisque;
+    background-color:#fad534;
     text-align: justify;
     width: 99%;
     
@@ -23,26 +23,21 @@ table{
 }
 
 th{
-    background-color:  rgb(235, 221, 202);
+    background-color:  #fab152;
 }
 ol{
-    background-color: rgb(212, 196, 177);
+    background-color: #fa9452;
 }
 ul{
-    background-color: rgb(212, 196, 177);
+    background-color: #fac652;
     
 }
 /*estilo de componentes*/
 textarea{
-    color:rgb(170, 68, 50);
+    color:#fa3600;
     font-weight: bolder;  
 }
-.NavheaderBar_1{
-    max-width: 100%;
-    background-color: rgb(225, 203, 34);
-    max-height: 10%;
-    margin: -6px auto; 
-}
+
 .mainHeader{
     background-color: burlywood;;
 }

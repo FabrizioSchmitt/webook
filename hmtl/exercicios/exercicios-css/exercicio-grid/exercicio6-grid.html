@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6 - Grid</title>
+    <style>
+        .container{
+            display:grid;
+            width: 500px;
+            
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 3fr 1fr 3fr;
+            height: 300px;
+            grid-auto-rows: 2fr;
+            grid-auto-columns: 2fr;
+            grid-auto-flow: column;
+            
+            
+        }
+        .box{
+            background-color: red;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exercício 1</h2>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>    
+        <div class="box">14</div>
+        
+    </div>
+    
+    <!--
+        gap <x> é uma abreviação dos métodos row-gap e column gap. Podemos declarar de maneira abreviada da seguinte maneira: gap A B, onde A faz referência as linhas e B as colunas. 
+
+    
+    -->
+<!-- Exercício 2-->
+        <h2>Exercício 2</h2>
+
+    <div style="
+    display:grid;
+    grid-template-columns: 100px 200px 200px;
+    grid-template-rows: 100px 200px 100px;
+    width: max-content;
+    background: #fff6fa;
+    gap: 3px;
+    ">
+
+            <div style="color: #6e33a6; background: #b688e0 ;grid-column: 1/-1;"><strong>UM</strong></div>
+
+            <div style="color: #6e33a6; background: #b688e0;
+            grid-column: 3;
+            grid-row:2/4 ;"><strong>DOIS</strong></div>
+
+            <div style="color: #6e33a6; background: #b688e0;
+            grid-column: 1;
+            grid-row:2/4"><strong>TRÊS</strong>
+                <div style="display:flex; flex-wrap: wrap; margin: 5px;">
+                    <div style="background-color: red; padding: 10px; margin: 5px;"> box 1</div>
+                    <div style="background-color: red; padding: 10px;margin: 5px;;"> box 1</div>
+                    <div style="background-color: red; padding: 10px;margin: 5px;"> box 1</div>
+                    <div style="background-color: red; padding: 10px;margin: 5px;"> box 1</div>
+                    <div style="background-color: red; padding: 10px;margin: 5px;"> box 1</div>
+                </div>
+            </div>
+
+            <div style="color: #6e33a6; background: #b688e0;
+            grid-column: 2; 
+            grid-row:2/4"><strong>QUATRO</strong></div>
+
+            <div style="color: #6e33a6; background: #b688e0 "><strong>CINCO</strong></div>
+
+            <div style="color: #6e33a6; background: #b688e0 "><strong>SEIS</strong></div>
+           
+
+    </div>
+</body>
+</html>

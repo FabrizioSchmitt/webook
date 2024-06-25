@@ -7,7 +7,7 @@
 </head>
 <body>
     <!--
-         TErminologias de grids
+    TErminologias de grids
 
     
 
@@ -29,18 +29,22 @@
 
     -grid-template-rows: x x x x x - Da mesma forma que template-columns, o grid-template-rows fornece um tamanho pré-estabelecido para cada uma das linhas adicionadas dentro dessa propriedade. 
 
-    Ambas templates podem ser combinadas para fornecer um tipo de formatação único ás células do grid. Caso nada for adicionado ou alguma célula for adicionada fora do range dessas propriedades, o padrão standard será aplicado, ou algum padrão definido em algum momento através do efeito cascata de estilos. 
+    Ambos templates podem ser combinadas para fornecer um tipo de formatação único ás células do grid. Caso nada for adicionado ou alguma célula for adicionada fora do range dessas propriedades, o padrão standard será aplicado, ou algum padrão definido em algum momento através do efeito cascata de estilos. 
 
-    gap-column x; define o tamanho do gap (espaço vazio) entre colunas. Como as propriedades anteriores, diversas unidades de medidas podem ser aplicadas à essa demarcação. 
+    column gap x; define o tamanho do gap (espaço vazio) entre colunas. Como as propriedades anteriores, diversas unidades de medidas podem ser aplicadas à essa demarcação. 
 
-    gap-rows tem o mesmo efeito de gap-column, porém ele afeta
+    row-gap tem o mesmo efeito de gap-column, porém ele afeta
     as linhas.  
 
     grid-auto-rows: x; Especifica um valor padrão para o tamanho das células que forem sendo adicionadas em uma linha, caso nenhum valor tenha sido especificado.
 
-    grid-gap: x; define o espaço das gaps tanto em linhas quanto em colunas. 
+    grid-auto-columns: <'x'>; especifica a forma implícita de qualquer célula adicionada ao grid. 
 
-    grid-auto-rows: x; Especifica um valor padrão para o tamanho das células de uma linha na grid. 
+    Métodos gap
+
+    gap: <'x'>; define o espaço das gaps tanto em linhas quanto em colunas. 
+
+
 
     repeat e minmax
 
@@ -64,11 +68,20 @@
 
     Usando a mesma forma que repeat, minmax consegue definir mínimos e máximos para as células. 
 
-    grid-template-columns: minmax(mi,ma)
+    grid-template-columns: minmax(min,max)
 
-    Sendo mi o tamanho mínimo e ma o tamanho máximo de uma célula. É possível, assim como acontece na função template, adicionar células após a postulação da função. 
+    Sendo min o tamanho mínimo e max o tamanho máximo de uma célula. É possível, assim como acontece na função template, adicionar células após a postulação da função. 
 
     grid-template-columns: minmax(10px, 30%) 100px 50px 40%;
+
+    Auto-flow
+
+    Por padrão, cada elemento que é inserido em um grid é alocado como uma célula do mesmo, essas células vão sendo organizadas em uma pilha de linhas. Com a propriedade auto-flow é possível definir uma orientação padrão para essa inserções, como por exemplo rows ou columns. 
+    
+    grid-auto-flow: column. 
+    grid-auto-flow: rows. 
+
+    Os valores column e row definem a orientação. 
 
     FR unidade de medida. 
 
@@ -104,12 +117,19 @@
     grid-column-start: 1;
     grid-column-end:3;
 
-    No exemplo acima, a coluna vai ser iniciada na coluna 1 e encerrada de fato na coluna 2. E ai temos uma nuance do método. Ao determinar o final do espaço de ocupação da grid em (grid-column-end:3) não estamos determinando até qual espaço de célula a célula filho irá ocupar, e sim, até qual o limite adjacente ela irá chegar.    
+    No exemplo acima, a coluna vai ser iniciada na coluna 1 e encerrada de fato na coluna 2. E ai temos uma nuance do método. Ao determinar o final do espaço de ocupação da grid em (grid-column-end:3) não estamos determinando até qual espaço de célula a célula filho irá ocupar, e sim, até qual o limite adjacente ela irá chegar. OU seja, esse método abrange os espaços (conta) entre as células. Sendo o espaço 1 determinado como espaço antes de iniciar a célula, que seria inalcançável.
+
     Existe uma forma simplificada para essa função que é simplesmente fazendo essa declaração:
 
-    grid-column: x/z  - Sendo x o valor inicial da column e z o valor final. 
+    grid-column: x/z  - Sendo x o valor do intervalo (grid-lines) inicial da column e z o valor final. 
 
     Os métodos de manipulação de linhas (rows) é exatamente o mesmo, com as mesmas perspectivas e função com a diferença apenas que nesse caso estaremos operando linhas,e com a sintaxe que é: grid-rows-start:, grid-rows-end: e grid-rows: x/z; 
+
+    Contagem reversa
+
+    os valores negativos atribuídos as posições de linhas e células como por exemplo: grid-column: 1/-1, reference a contagem das células do último para o primeiro em ordem de fluxo. 
+    Isso significa, por exemplo, que -1 representa a última linha (no nosso exemplo ) da coluna, -2 representaria a penúltima linha, -3 a anti-penúltima e assim por diante, sempre levando em conta que a contagem é feita no sentido padrão do fluxo html (da  esquerda para a direita).
+    
     -->
     
     

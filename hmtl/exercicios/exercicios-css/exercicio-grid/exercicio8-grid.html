@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            width: 500px;
+            grid-template-columns: repeat(2,1fr) 2fr;
+            grid-template-rows: repeat(3,1fr);
+        }
+        .box{
+            background-color: red;
+            border:1px solid black;
+            padding:5px;
+            width: 1fr;
+            height: 1fr; 
+        }
+            .container2{
+                display:grid;
+                width: 80%;
+                align-self: center;
+                height: 400px;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,minmax(1fr,1fr));
+                margin: 10px;
+                gap:5px
+            }
+            .box2{
+            background-color: blue; 
+            border: 1px black solid;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            
+            }
+            
+            .container3{
+                display:grid;
+                grid-template-columns: repeat(3,minmax(50px,1fr));
+                grid-template-rows: repeat(3,minmax(50px,1fr)) ;
+                
+            }
+            
+            .box3{
+                background-color: blueviolet;
+                color: rgb(233, 219, 247);
+                border: 1px solid black;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+              
+            }
+    </style>
+</head>
+<body>
+    <h2>Exercício criação layout</h2>
+    <div class="container">
+        <div class="box" style="grid-column:1/-1">Header</div>
+        <div class="box" style="grid-row:2/5">Aside</div>
+        <div class="box" style="grid-column:2/-1;grid-row:2/5">Main</div>
+        <div class="box" style="grid-column:1/-1">footer</div> 
+    </div>
+    <h2 style="margin: 10px;">Exercício 2 - Manipulação de texto com display flex e layout no modo grid.</h2>
+    <div class="container2">
+        <div class="box2" style="grid-column:1/-1">1</div>
+        <div class="box2" style="grid-row: 2/4;">2</div>
+        <div class="box2">3</div>
+        <div class="box2">4</div>
+        <div class="box2">5</div>
+        <div class="box2">6</div>
+        
+    </div>
+
+    <h2>Exercício 3 - sobreposição com span</h2>
+    <div class="container3">
+        <div class="box3" style="grid-row: span 3;">1</div>
+        <div class="box3" style="grid-column: span 2 ">2</div>
+        <div class="box3">3</div>
+        <div class="box3">4</div>
+        <div class="box3">5</div>
+        <div class="box3">6</div>
+    </div>
+
+    <!--
+     Span é um valor que: diferentemente da aplicação pura com fração <x/y> que cobre espaço com base na contagem dos gaps, cobre o espaçamento do grid contando as células. 
+    -->
+    
+
+    
+</body>
+</html>

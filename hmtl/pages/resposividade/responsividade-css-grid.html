@@ -129,10 +129,34 @@
 
     os valores negativos atribuídos as posições de linhas e células como por exemplo: grid-column: 1/-1, reference a contagem das células do último para o primeiro em ordem de fluxo. 
     Isso significa, por exemplo, que -1 representa a última linha (no nosso exemplo ) da coluna, -2 representaria a penúltima linha, -3 a anti-penúltima e assim por diante, sempre levando em conta que a contagem é feita no sentido padrão do fluxo html (da  esquerda para a direita).
+
+    Span (distância em inglês) é um valor que, diferentemente da aplicação pura com fração <x/y> - que cobre espaço na grid com base na contagem dos gaps- distribui espaçamento do grid fazendo a contagem a partir das células, ou melhor: ele sobrepõe as células. 
+     O valor span pode ser usado como um valor qualquer;
+     grid-column: span 2 ou determinando inicio e fim na mesma declaração;
+     grid-column: x/ span x
+
+
+     Alinhamento -itens e content
+
+
+
+     VH e VW -
+     View port height
+     É uma unidade de medida  CSS que se baseia no tamanho total de tela do browser. Cada 1 vh representa o valor igual a 1% da totalidade do display em altura. Diferente da unidade % que faz uma referência percentual do container ao qual se encontra como um todo (largura e altura do container), VH é sempre um valor percentual de altura referente ao display do browser como um todo.
+     VW é um conceito idêntico e funciona exatamente da mesma forma, exceto que ele é uma unidade de medida horizontal. 
+
+
+
+     EM
+     É uma unidade de medida em CSS que torna o tamanho da fonte relativa ao tamanho da fonte de um elemento pai em relação ao filho. 
+
     
     -->
     
-    
+    <picture style="border: 5px red solid;">
+        <img src="../../../img/didaticos/grid-schedule-1.png" alt="Esquema Grid">
+        
+    </picture>
     
 </body>
 </html>

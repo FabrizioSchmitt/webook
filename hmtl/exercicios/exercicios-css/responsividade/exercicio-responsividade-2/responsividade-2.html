@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsividade-2.css">
+    <title>Responsividade - Exercício 2</title>
+</head>
+<body>
+    <header class="header">
+        
+            <h2 style="min-width: fit-content;">Site responsivo</h2>
+            <nav class="navHeader">
+          
+                <a href="#" class="linksHeader">Link</a>
+                <a href="#" class="linksHeader">Link2</a>
+                <a href="#" class="linksHeader">Link3</a>
+                <a href="#" class="linksHeader">Link4</a>
+            </nav>
+    </header>
+    <main class="main">
+        <section class="mainSection">Main - Section-1</section>
+    </main>
+    <aside class="aside"></aside>
+    <footer class="footer"></footer>
+    
+</body>
+</html>
+
+
+
+<!--
+#CSS units
+
+#Layout fixo -
+px
+
+#Unidades de medida próprios para Layout fluído.
+
+%
+vh
+vw
+auto
+
+#1- Layout fluído
+
+usar sempre %,auto,vh e vw para permitir a adaptação dos elementos da página de maneira fluída, tendo sempre como base proporções ao invés de valores absolutos.
+
+#Mater fixo
+Quando houver momentos em que é preciso manter uma determinada posição de alguns elementos da página, podemos usar propriedades como max-width, e deixar um pré-set configurado. Dessa forma, mesmo que um site seja esticado ao máximo ele vai manter algumas proporções.
+
+#Textos
+
+#Texto fixo pixel
+
+cada 1px = 0.75pts
+
+#Textos fluidos
+
+#em 
+
+cada 1 unidade de em é igual a multiplicação da sua medida pelo elemento pai. 
+
+Exemplo: se o elemento pai da qual deriva determinada fonte tem 15px, '1em' do filho vai valer = 15px . Se a fonte pai tiver valor 30px, 1em do filho vale 30px, 2em do filho vale 60px, etc..etc... 
+
+Esses valores podem escalar caso a unidade 'em' for aplicada em elementos aninhados. 
+
+#rem
+Funciona como um multiplicador do valor do root (o valor da fonte do html principal)
+
+###Estratégia####
+
+Setar a fonte principal (a do html) com um valor percentual e usar erm como base para fontes. Dessa forma, as fontes irão escalar na mesma medida que o view port. 
+
+
+as fontes devem ser fluídas, isso significa que precisam ter unidades de medida escaláveis. 
+Criar layout usando grid
+
+
+Cálculo para obter percentual ideal de fontes
+
+<valor desejado em pixel> / <valor atual em pixels> * 100 ou 100%. 
+
+line-height tem relação direta com o valor do texto e deve ser ajustado de acordo com a font-size. 
+

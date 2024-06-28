@@ -1,0 +1,60 @@
+
+html{
+    font-size: 62.5%;
+}
+.header{
+    background-color: blueviolet;
+    
+    /*width em % garante fluidez quando operamos a página em diferentes tamanhos. Nesse caso específico max width % garante a capacidade do cabeçalho se ajustar a diferentes tamanhos de display.*/
+
+    /* max-width sendo usado para manter proporções da página, mesmo após ela ser esticada*/
+    
+    width: 90%;
+    max-width: 980px;
+    
+    color:whitesmoke;
+    display: flex;   
+    align-items: center; 
+    font-size: 1.6rem;
+}
+
+.navHeader{
+    position: absolute;
+    right: 13%;
+    font-size: 1.6rem;    
+
+}
+.linksHeader{
+    color:aliceblue;
+    margin: auto; 
+    font-size: 1.6rem; 
+}
+.main{
+    width:90%;
+    max-width: 980px;
+    background-color: violet;
+    font-size: 1.8rem;
+}
+.footer {
+    width: 90%;
+    max-width: 980px;
+    background-color: blueviolet;
+    font-size: 1.6rem;
+}
+.aside{
+    width: 90%;
+    max-width: 980px;
+    background-color: darkmagenta;
+    font-size:1.6rem
+}
+.mainSection{
+    background-color: darkorchid;
+    width: 70%;
+    max-width: 980px;
+    height: 30%;
+    max-height: 100px;
+    margin: 1px;
+    font-size: 1.6rem;
+    
+}
+

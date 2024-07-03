@@ -8,6 +8,10 @@ html{
     /*width em % garante fluidez quando operamos a página em diferentes tamanhos. Nesse caso específico max width % garante a capacidade do cabeçalho se ajustar a diferentes tamanhos de display.*/
 
     /* max-width sendo usado para manter proporções da página, mesmo após ela ser esticada*/
+
+    /*
+    - 
+    */
     
     width: 90%;
     max-width: 980px;
@@ -51,10 +55,9 @@ html{
     background-color: darkorchid;
     width: 70%;
     max-width: 980px;
-    height: 30%;
-    max-height: 100px;
+    min-height: 3rem;
+    max-height: fit-content;
     margin: 1px;
-    font-size: 1.6rem;
-    
+    font-size: 1.6rem; 
 }
 

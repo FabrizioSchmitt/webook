@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 8</title>
+    <style>
+       
+
+        .gridStruct{
+            display:grid;
+            grid-template-areas: 
+            "header header"
+            "content sidebar"
+            "footer footer2"    
+            "footer3 footer4"
+            ;
+            min-height: 100vh;
+            grid-template-rows: auto 1fr 50px 50px 50px 50px;
+            grid-template-columns: 3fr 1fr;
+        }
+        .header,.content,.sidebar,.footer,.footer2,.footer3,.footer4{
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+        html{
+            font-size: 62,5%;
+        }
+        .header{
+            background-color: blueviolet;
+            grid-area: header;
+            min-height: 10vh;
+            
+        }
+        .content{
+            background-color: red;
+            grid-area: content;
+            min-height: 20vh;
+        }
+        .footer{
+            background-color: aquamarine;
+            grid-area: footer;
+            min-height: min-content;
+            outline: 1px solid black;
+        }
+        .footer2{
+            background-color: aquamarine;
+            grid-area: footer2;
+            min-height: min-content;
+            outline: 1px solid black;
+        }
+        .footer3{
+            background-color: aquamarine;
+            grid-area: footer2;
+            min-height: min-content;
+            outline: 1px solid black;
+        }
+        .footer4{
+            background-color: aquamarine;
+            grid-area: footer2;
+            min-height: min-content;
+            outline: 1px solid black;
+        }
+        .sidebar{
+            background-color:brown;
+            grid-area: sidebar;
+            outline: 1px solid black;
+        }
+        @media (max-width:500px){
+          .gridStruct{
+            grid:
+            "header"
+            "sidebar"
+            "content"
+            "footer"
+            "footer2"
+            "footer3"
+            "footer4";
+            
+          }  
+
+        }
+        
+    </style>
+</head>
+<body>
+    <main class="gridStruct">
+        <header class="header">Cabeçalho</header>
+        <article class="content">Conteúdo</article>
+        <aside class="sidebar">Barra lateral</aside>
+        <footer class="footer">Rodapé1</footer>
+        <footer class="footer2" style="outline: red solid 2px;">Rodapé2</footer>
+        <footer class="footer3">Rodapé3</footer>
+        <footer class="footer4">Rodapé4</footer>
+    </main>
+
+    
+</body>
+</html>

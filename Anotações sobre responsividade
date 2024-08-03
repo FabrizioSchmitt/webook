@@ -1,0 +1,49 @@
+CSS units.
+
+
+
+Unidades fixas.
+(px) - unidade para layouts estáticos ou fixos.
+ 
+
+Unidades Fluídos
+
+'%' unidade para layouts fluídos.
+
+'auto' Que ajusta automaticamente a depender do tamanho do conteúdo.
+
+'vh' - viewport height, representa  o altura do display, sendo cada 1 ponto equivalente a 1% da altura display. 
+
+'vw' - viewport width, representa a largura do display, sendo cada 1 ponto equivalente a 1% da largura do do display.
+
+'em' multiplicado pela unidade pai.
+'rem' multiplicado pela unidade raiz.
+
+ 1****
+ Bordas/margens - É possível usar max-width (largura máximo) para fixar um tamanho ao qual a partir daquele ponto serão criadas "sobras" ou margens no layout da página. 
+ 
+ É possível estabelecer em concomitância uma fluidez a largura da página utilizando %. 
+ 
+ Deixando assim- "width:100% e max-width:980px", com essa estratégia podemos aplicar fluidez e margens ao mesmo tempo. 
+
+
+TExtos
+
+1px equivale a 0.75 pontos no word
+16px (o padrão dos navegadores) equivale a 12 pt no word. 
+
+
+
+
+
+
+
+Ordem prática para responsividade
+
+1- Fazer layout para tamanho de celular (antes)
+
+2- Ajustar larguras do layout em '%', 'vh', 'vw'. *A largura dos elementos pode ser entre 90% a 100% *Definir também largura máxima 'max-width' em pixels para obter (quando necessário) algum tipo de margem no layout.  
+
+3- Definir tamanho da fonte root (html font-size) em %. Em geral 62.5% faz com que cada 1rem baseado nesses 62.5% tenha 10pixels de tamanho. OU seja, 1rem = 10px, 1.6rem = 16pixel. 
+Dessa forma, basta distribuir o font-size do blocos do documento em 'em' ou 'rem' e fazendo isso, basta alterar o percentual do root para que todas as fontes se ajustem em cascata.
+
